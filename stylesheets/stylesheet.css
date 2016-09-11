@@ -6,7 +6,7 @@
  */
 
 html {
-  font-family: sans-serif; /* 1 */
+  font-family: sans-serif; /* 1 */f
   -webkit-text-size-adjust: 100%; /* 2 */
   -ms-text-size-adjust: 100%; /* 2 */
 }
@@ -459,7 +459,7 @@ header h1 {
   font-size: 72px;
   font-weight: normal;
   line-height: 1;
-  color: #fff;
+  color: #999;
   letter-spacing: -1px;
 }
 
