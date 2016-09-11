@@ -1,3 +1,12 @@
+ $('.black_overlay').click(function(){
+    var id = $(this).attr('id');
+    var num = id.replace('fade','');
+    
+    $('#light'+num).hide();
+    $('#fade'+num).hide();
+  });
+
+
 console.log('This would be the main JS file.');
 /*!
  * Lightbox v2.8.2
