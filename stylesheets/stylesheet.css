@@ -1031,6 +1031,12 @@ body.lb-disable-scrolling {
   opacity: 1;
 }
 /*end Lightbox*/
+
+.portfolio img {
+  padding:10px;
+  border: solid 1px #ccc;
+}
+
 .black_overlay {
   display: none;
   position: fixed;
