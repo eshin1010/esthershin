@@ -1032,11 +1032,6 @@ body.lb-disable-scrolling {
 }
 /*end Lightbox*/
 
-.portfolio img {
-  padding:10px;
-  border: solid 1px #ccc;
-}
-
 .black_overlay {
   display: none;
   position: fixed;
@@ -1101,4 +1096,10 @@ img.cf-large {
   height: 200px;
   width: auto;
     padding: 0;
+}
+
+.portfolio img {
+  margin:10px;
+  border: solid 1px #ccc;
+  width: 500px;
 }
