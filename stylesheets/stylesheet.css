@@ -2,8 +2,7 @@
 
 /**
  * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling user zoom.
  */
 
 html {
@@ -25,8 +24,7 @@ body {
 
 /**
  * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11
- * and Firefox.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
 
@@ -315,8 +313,7 @@ input::-moz-focus-inner {
 }
 
 /**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet.
  */
 
 input {
@@ -338,8 +335,7 @@ input[type="radio"] {
 }
 
 /**
- * Fix the cursor style for Chrome's increment/decrement buttons. For certain
- * `font-size` values of the `input`, it causes the cursor style of the
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
 
@@ -452,7 +448,7 @@ header {
   padding-bottom: 40px;
   font-family: 'League Script', 'Helvetica Neue', Helvetica, Arial, serif;
   color: #888;
-  background: #2e7bcf url(../images/dandelion-1622100-esther-banner.jpg) 0 0 repeat-x;
+  background: #2e7bcf url(../images/fog-240075) 0 0 repeat-x;
   border-bottom: solid 1px #888;
 }
 
