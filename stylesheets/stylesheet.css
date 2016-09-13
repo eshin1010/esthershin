@@ -9,8 +9,16 @@ html {
   font-family: sans-serif; /* 1 */f
   -webkit-text-size-adjust: 100%; /* 2 */
   -ms-text-size-adjust: 100%; /* 2 */
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
 }
+/* Removes infamous 300ms touch delay */
 
+#simplbox {
+  z-index: 9999; /* Use whatever you want */
+  ms-touch-action: none; /* Removes touch action */
+  touch-action: none; /* Removes touch action */
+}
 /**
  * Remove default margin.
  */
