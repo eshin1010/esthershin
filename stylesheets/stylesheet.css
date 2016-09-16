@@ -341,8 +341,7 @@ header {
   padding-top: 40px;
   padding-bottom: 40px;
   font-family: 'League Script', 'Helvetica Neue', Helvetica, Arial, serif;
-  color: #888;
-  background: #2e7bcf url(../images/background-1462855.jpg) 0 0 repeat-x;
+  color: #fff;
   background-size: 100% auto;
   border-bottom: solid 1px #888;
 }
