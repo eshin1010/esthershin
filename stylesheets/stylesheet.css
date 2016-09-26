@@ -19,6 +19,7 @@ html {
 #simplbox img {
   border: solid 1px #ccc;
   width: 550px;
+  margin-bottom: 10px;
 }
 /*Remove default margin.*/
 body {
