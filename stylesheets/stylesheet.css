@@ -16,6 +16,9 @@ html {
   ms-touch-action: none; /* Removes touch action */
   touch-action: none; /* Removes touch action */
 }
+#simplbox img {
+  border: solid 1px #ccc;
+}
 /*Remove default margin.*/
 body {
   margin: 0;
