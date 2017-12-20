@@ -3,6 +3,7 @@
 <title>Esther Shin</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="http://eshin1010.github.io/images/dots.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
 body, h1 {
@@ -21,21 +22,19 @@ html {
 body {
 	margin: 0
 }
-article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+article, aside, figcaption, figure, footer, header, main, menu, nav, section {
 	display: block
 }
 a {
 	background-color: transparent;
-	-webkit-text-decoration-skip: objects
+	-webkit-text-decoration-skip: objects;
+	color: #515151;
 }
 a:active, a:hover {
 	outline-width: 0
 }
 small {
 	font-size: 80%
-}
-figure {
-	margin: 1em 40px
 }
 img {
 	border-style: none
@@ -152,12 +151,11 @@ a {
 }
 .row {
 	width: 100%;
-	display:flex;
+	display: flex;
 	flex-wrap: wrap
 }
 .row .col img {
 	width: 100%;
-	padding: 5px;
 }
 .w3-col, .w3-half, .w3-third, .w3-twothird, .w3-threequarter, .w3-quarter {
 	float: left;
@@ -215,7 +213,7 @@ a {
 .w3-col.m5 {
 	width: 41.66666%
 }
-.w3-col.m6, .w3-half {
+.col.m6, .w3-half {
 	width: 49.99999%
 }
 .w3-col.m7 {
@@ -409,6 +407,9 @@ a {
 .padding-large {
 	padding: 12px 24px!important
 }
+.padding-4 {
+	padding: 4px!important;
+}
 .padding-16 {
 	padding-top: 16px!important;
 	padding-bottom: 16px!important
@@ -467,9 +468,6 @@ a {
 .w3-text-green, .w3-hover-text-green:hover {
 	color: #4CAF50!important
 }
-.w3-text-orange, .w3-hover-text-orange:hover {
-	color: #ff9800!important
-}
 .w3-text-purple, .w3-hover-text-purple:hover {
 	color: #9c27b0!important
 }
@@ -518,9 +516,6 @@ a {
 .border-dark-grey, .w3-hover-border-dark-grey:hover, .border-dark-gray, .w3-hover-border-dark-gray:hover {
 	border-color: #616161!important
 }
-a {
-	color: #515151;
-}
 a:hover {
 	background: #e20033;
 	text-decoration: none;
@@ -532,21 +527,21 @@ a:hover {
 	transition: all .25s ease-in-out;
 }
 .opacity, .hover-opacity:hover {
-    opacity: 0.60;
+	opacity: 0.60;
 }
 .w3-btn, .w3-button {
-    border: none;
-    display: inline-block;
-    outline: 0;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
+	border: none;
+	display: inline-block;
+	outline: 0;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: inherit;
+	background-color: inherit;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
 }
 .box {
 	float: left;
@@ -621,10 +616,6 @@ a:hover {
 .photoset-caption {
 	padding: 5px 0px;
 }
-.text {
-	border-top: 2px solid #000000;
-	padding: 25px 10px 0px 10px;
-}
 .tags {
 	padding: 15px 0px;
 	border-top: 1px solid #cccccc;
@@ -655,6 +646,42 @@ a:hover {
 .box-caption-text {
 	height: 165px;
 }
+.image-container {
+	position: relative;
+	width: 100%;
+}
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.image-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #6F9FB6;
+}
+.image-container:hover .image-overlay {
+	opacity: .85;
+}
+.text {
+	color: white;
+	width: 100%;
+	padding: 10px 20px;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center
+}
 </style>
 
 <body>
@@ -665,7 +692,7 @@ a:hover {
   <!-- Header -->
   <header class="panel center opacity" style="padding:128px 16px">
     <h1 class="large">WEB DEVELOPER</h1>
-    <h1>Esther Shin</h1>
+    <h1 style="color: #6F9FB6">Esther Shin</h1>
     <div class="padding-32">
       <div class="bar border"> <a href="#" class="bar-item w3-button">Home</a> <a href="#" class="bar-item w3-button light-grey">Portfolio</a> <a href="#" class="bar-item w3-button">Contact</a> </div>
     </div>
@@ -673,33 +700,54 @@ a:hover {
   
   <!-- Photo Grid -->
   <div class="row">
-  <div class="col l4 s6">
-  <img src="http://eshin1010.github.io/images/main-aM-referral-600x400.png">
-  </div>
-  <div class="col l4 s6">
-  <img src="http://eshin1010.github.io/images/main-legal-solutions-600x400.png">
-  </div>
-  <div class="col l4 s6">
-  <img src="http://eshin1010.github.io/images/main-artfall-600x400.png">
-  </div>
-  </div>
-  <div class="row">
-  <div class="col l4 s6">
-  <img src="http://eshin1010.github.io/images/main-friends-of-600x400.png">
-  </div>
-  <div class="col l4 s6">
-  <img src="http://eshin1010.github.io/images/main-slash-denim-600x400.png">
-  </div>
-  <div class="col l4 s6">
-  <img src="http://eshin1010.github.io/images/main-template-library-600x400.png">
-  </div>
+    <div class="col l4 m6 s12 padding-4"> <a href="#">
+      <div class="image-container"> <img class="image" src="http://eshin1010.github.io/images/main-aM-referral-600x400.png">
+        <div class="image-overlay">
+          <div class="text">automotiveMastermind Referral Program</div>
+        </div>
+      </div>
+      </a> </div>
+    <div class="col l4 m6 s12 padding-4"><a href="#">
+      <div class="image-container"> <img class="image" src="http://eshin1010.github.io/images/main-legal-solutions-600x400.png">
+        <div class="image-overlay">
+          <div class="text">Thomson Reuters Legal Solutions</div>
+        </div>
+      </div>
+      </a></div>
+    <div class="col l4 m6 s12 padding-4"> <a href="#">
+      <div class="image-container"> <img class="image" src="http://eshin1010.github.io/images/main-artfall-600x400.png">
+        <div class="image-overlay">
+          <div class="text">ARTFALL: A Night of Art, Fashion, and Design</div>
+        </div>
+      </div>
+      </a></div>
+    <div class="col l4 m6 s12 padding-4"><a href="#">
+      <div class="image-container"> <img class="image" src="http://eshin1010.github.io/images/main-friends-of-600x400.png">
+        <div class="image-overlay">
+          <div class="text">Intel Ultrabook Experience: Friends Of</div>
+        </div>
+      </div>
+      </a></div>
+    <div class="col l4 m6 s12 padding-4"><a href="#">
+      <div class="image-container"> <img class="image" src="http://eshin1010.github.io/images/main-slash-denim-600x400.png">
+        <div class="image-overlay">
+          <div class="text">Slash Denim</div>
+        </div>
+      </div>
+      </a></div>
+    <div class="col l4 m6 s12 padding-4"><a href="#">
+      <div class="image-container"> <img class="image" src="http://eshin1010.github.io/images/main-template-library-600x400.png">
+        <div class="image-overlay">
+          <div class="text">Thomson Reuters Legal Marketing Template Library</div>
+        </div>
+      </div>
+      </a></div>
   </div>
   
   <!-- End Page Content --> 
 </div>
 
 <!-- Footer -->
-<footer class="container padding-64 light-grey center large"> <a href="https://www.linkedin.com/in/esthershin/" target="_blank">LinkedIn</a>
-</footer>
+<footer class="container padding-64 light-grey center large"> <a href="https://www.linkedin.com/in/esthershin/" target="_blank">LinkedIn</a> </footer>
 </body>
 </html>
