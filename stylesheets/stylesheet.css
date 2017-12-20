@@ -434,7 +434,7 @@ a {
 }
 /* Colors */
 .accent {
-	color: #6F9FB6;
+	color: #6F9FB6!important;
 }
 .w3-green, .w3-hover-green:hover {
 	color: #fff!important;
