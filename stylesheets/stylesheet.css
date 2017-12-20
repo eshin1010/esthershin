@@ -433,6 +433,9 @@ a {
 	box-shadow: none!important
 }
 /* Colors */
+.accent {
+	color: #6F9FB6;
+}
 .w3-green, .w3-hover-green:hover {
 	color: #fff!important;
 	background-color: #4CAF50!important
