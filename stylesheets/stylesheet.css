@@ -666,7 +666,7 @@ a:hover {
 .image-container:hover .image-overlay {
 	opacity: .85;
 }
-.image .email {
+.image.email {
 	max-width: 500px;
 }
 .text {
