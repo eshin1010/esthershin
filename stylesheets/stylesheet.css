@@ -144,7 +144,8 @@ a {
 .row {
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap
+	flex-wrap: wrap;
+	align-items: center
 }
 .row .col img {
 	width: 100%;
