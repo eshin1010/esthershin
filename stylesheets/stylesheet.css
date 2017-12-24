@@ -267,7 +267,7 @@ a {
 }
 }
 .content {
-	max-width: 980px;
+	max-width: 1200px;
 	margin: auto
 }
 @media (max-width:600px) {
