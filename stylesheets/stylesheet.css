@@ -132,7 +132,7 @@ a {
 	position: static;
 	float: left
 }
-.bar .w3-button {
+.bar .button {
 	white-space: normal
 }
 .bar-block .bar-item {
@@ -438,7 +438,7 @@ a {
 	padding-top: 64px!important;
 	padding-bottom: 64px!important
 }
-.w3-button:hover {
+.button:hover {
 	color: #000!important;
 	background-color: #ccc!important
 }
@@ -540,7 +540,7 @@ a:hover {
 .opacity, .hover-opacity:hover {
 	opacity: 0.60;
 }
-.w3-btn, .w3-button {
+.w3-btn, .button {
 	border: none;
 	display: inline-block;
 	outline: 0;
