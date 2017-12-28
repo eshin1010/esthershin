@@ -698,7 +698,7 @@ a:hover {
 }
 .display-container {
 	position:relative
-
+}
 .display-container:hover .display-hover {
 	display: block
 }
