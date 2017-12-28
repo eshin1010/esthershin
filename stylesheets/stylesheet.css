@@ -696,3 +696,12 @@ a:hover {
 	-ms-transform: translate(-50%, -50%);
 	text-align: center
 }
+.display-container {
+	position:relative
+
+.display-container:hover .display-hover {
+	display: block
+}
+.display-container:hover span.display-hover {
+	display: inline-block
+}
