@@ -440,9 +440,8 @@ a {
 	padding-bottom: 64px!important
 }
 .button:hover {
-	color: #000;
-	background-color: #ccc;
-	cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: rgb(204, 204, 204);
 }
 .w3-transparent, .w3-hover-none:hover {
 	background-color: transparent!important
