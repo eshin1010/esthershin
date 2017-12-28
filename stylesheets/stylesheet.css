@@ -529,16 +529,6 @@ a {
 .border-dark-grey, .w3-hover-border-dark-grey:hover, .border-dark-gray, .w3-hover-border-dark-gray:hover {
 	border-color: #616161!important
 }
-a:hover {
-	background: #e20033;
-	text-decoration: none;
-	color: #ffffff;
-	-webkit-transition: all .25s ease-in-out;
-	-moz-transition: all .25s ease-in-out;
-	-o-transition: all .25s ease-in-out;
-	-webkit-transition: all .25s ease-in-out;
-	transition: all .25s ease-in-out;
-}
 .opacity, .hover-opacity:hover {
 	opacity: 0.60;
 }
