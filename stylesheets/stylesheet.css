@@ -675,6 +675,9 @@ a {
 .image.email {
 	max-width: 500px;
 }
+.mySlides {
+	padding: 15px 0;
+}
 .text {
 	color: white;
 	width: 100%;
