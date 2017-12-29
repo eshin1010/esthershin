@@ -7,7 +7,9 @@
 <link rel="icon" type="image/png" href="http://eshin1010.github.io/images/blue-orange.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://eshin1010.github.io/stylesheets/stylesheet.css">
+
 </head>
+
 <body>
 
 <!-- !PAGE CONTENT! -->
@@ -18,28 +20,55 @@
     <h1 class="large">WEB DEVELOPER & DESIGNER</h1>
     <h1 class="accent">Esther Shin</h1>
     <div class="padding-32">
-      <div class="bar border"> <a href="https://eshin1010.github.io" class="bar-item w3-button">Home</a> <a href="/portfolio.html" class="bar-item w3-button light-grey">Portfolio</a> <a href="#" class="bar-item w3-button">Contact</a> </div>
+      <div class="bar border"> <a href="https://eshin1010.github.io" class="bar-item button">Home</a> <a href="/portfolio.html" class="bar-item button light-grey">Portfolio</a> <a href="#" class="bar-item button">Contact</a> </div>
     </div>
-  </header>
+  <div style="text-align: center">
+      <h3>automotiveMastermind</h3>
+      <h4>emails & landing pages</h4>
+    </div></header>
   
   <!-- Photo Grid -->
   
   <div class="portfolio">
-    <div style="text-align: center">
-      <h3>automotiveMastermind</h3>
-      <h4>Marketing emails and landing pages</h4>
-    </div>
+    
     <div class="row">
       <div class="col l8 m8 s12 padding-4">
-        <div class="image-container"> <img class="image" src="https://raw.githubusercontent.com/eshin1010/eshin1010.github.io/master/images/LP-aM-conquest.png"> </div>
+        <div class="image-container"> <img class="image" src="https://eshin1010.github.io/images/LP-aM-referral.png"> </div>
       </div>
-      <div class="col l4 m6 s12 padding-4">Landing page: Invitation with form</div>
+      <div class="col l4 m6 s12 padding-4"><h4>Landing page: Dealer Referral Program</h4></div>
+    </div>
+    <!--/row-->
+        <div class="row light-grey">
+
+    <h4 style="margin: 10px auto"qwqa>Landing page: Dealer Referral Program</h4>
+    <div class="content display-container">
+    	<img class="mySlides" src="https://eshin1010.github.io/images/aM-referral-boxes.png" style="width:100%; max-width: 800px; margin: 0 auto">
+        <img class="mySlides" src="https://eshin1010.github.io/images/aM-referral-form.png" style="width:100%; max-width: 800px; margin: 0 auto">
+        <img class="mySlides" src="https://eshin1010.github.io/images/aM-referral-steps.png" style="width:100%; max-width: 800px; margin: 0 auto">
+      <button class="button w3-black display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="button w3-black display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    </div>
+        <div class="row">
+      <div class="col l4 m6 s12 padding-4"><h4>Email: Monthly Newsletter</h4></div>
+      <div class="col l8 m8 s12 padding-4">
+        <div class="image-container"> <img class="image email" src="https://eshin1010.github.io/images/email-aM-newsletter.png"> </div>
+      </div>
     </div>
     <!--/row-->
     <div class="row">
-      <div class="col l4 m6 s12 padding-4">Email: Monthly Newsletter</div>
       <div class="col l8 m8 s12 padding-4">
-        <div class="image-container"> <img class="image email" src="https://raw.githubusercontent.com/eshin1010/eshin1010.github.io/master/images/email-aM-newsletter.png"> </div>
+        <div class="image-container"> <img class="image email" src="http://eshin1010.github.io/images/email-aM-conquest.png"> </div>
+      </div>
+      <div class="col l4 m6 s12 padding-4"><h4>Email: Invitation</h4></div>
+      
+    </div>
+    <!--/row-->
+    <div class="row">
+      
+      <div class="col l4 m6 s12 padding-4"><h4>Landing page: Invitation with form</h4></div>
+      <div class="col l8 m8 s12 padding-4">
+        <div class="image-container"> <img class="image" src="https://eshin1010.github.io/images/LP-aM-conquest.png"> </div>
       </div>
     </div>
     <!--/row-->
@@ -81,5 +110,24 @@
 
 <!-- Footer -->
 <footer class="container padding-64 light-grey center large"> <a href="https://www.linkedin.com/in/esthershin/" target="_blank">LinkedIn</a> </footer>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
 </body>
 </html>
