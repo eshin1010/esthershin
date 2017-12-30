@@ -18,7 +18,7 @@ body {
 	padding:100px 16px
 }
 .portfolio .row.full {
-	width: 100% !important
+	max-width: none !important
 }
 article, aside, figcaption, figure, footer, header, main, menu, nav, section {
 	display: block
