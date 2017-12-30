@@ -216,7 +216,7 @@ a {
 .w3-col.m3, .w3-quarter {
 	width: 24.99999%
 }
-.w3-col.m4, .w3-third {
+.col.m4, .w3-third {
 	width: 33.33333%
 }
 .w3-col.m5 {
@@ -228,7 +228,7 @@ a {
 .w3-col.m7 {
 	width: 58.33333%
 }
-.w3-col.m8, .w3-twothird {
+.col.m8, .w3-twothird {
 	width: 66.66666%
 }
 .w3-col.m9, .w3-threequarter {
