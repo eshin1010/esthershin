@@ -17,7 +17,7 @@ body {
 .panel.center {
 	padding:100px 16px
 }
-.full {
+portfolio.row.full {
 	width: 100% !important
 }
 }
