@@ -1,1 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Esther Shin - Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="http://eshin1010.github.io/images/blue-orange.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://eshin1010.github.io/stylesheets/stylesheet.css">
+</head>
 
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="content"> 
+  
+  <!-- Header -->
+  <header class="panel center opacity">
+    <h1 class="large">WEB DEVELOPER & DESIGNER</h1>
+    <h1 style="color: #6F9FB6">Esther Shin</h1>
+    <div class="padding-32">
+      <div class="bar border"> <a href="." class="bar-item button">Home</a> <a href="./portfolio.html" class="bar-item button light-grey">Portfolio</a> <a href="#" class="bar-item button">Contact</a> </div>
+    </div>
+    <div style="text-align: center">
+      <h3>ARTFALL: a night of art, fashion, and design</h3>
+      <h4>New York-based event organizers requested a bold invitation design that felt at place with featured artworks and evoked the aesthetics of fall in the city.</h4>
+    </div>
+  </header>
+  
+  <!-- Photo Grid -->
+  
+  <div class="portfolio">
+    <div class="row">
+      <div class="col l4 m4 s12 padding-4">
+        <h4>Invitation</h4>
+        <p>Invitation email. The graphic was also used to promote the event on social media.</p>
+      </div>
+      <div class="col l8 m8 s12 padding-4">
+        <div class="image-container"> <img class="image email" src="https://eshin1010.github.io/images/artfall-flyer-email.png"> </div>
+      </div>
+    </div>    
+    <!--/row-->
+    <div class="row reverse">
+      <div class="col l8 m8 s12 padding-4">
+        <div class="image-container"> <img class="image" src="https://eshin1010.github.io/images/artfall-event-0.png" style="max-width: 600px"> </div>
+      </div>
+      <div class="col l4 m4 s12 padding-4">
+        <h4>print poster</h4>
+        <p>The event organizers requested a high-resolution version of the graphic optimized for a large print poster to display at the gallery entrance.</p>
+      </div>
+      
+    </div>
+    <!--/row-->
+    <div class="row">
+            <h4>event photos at HL 25 in Chelsea</h4></div>
+    <div class="row">
+    <div class="col l4 m6 s12 padding-4">
+      <div class="image-container"> <img class="image" src="http://eshin1010.github.io/images/artfall-event-3.png">
+      </div>
+     </div>
+    <div class="col l4 m6 s12 padding-4">
+      <div class="image-container"> <img class="image" src="http://eshin1010.github.io/images/artfall-event-5.png">
+      </div>
+     </div>
+    <div class="col l4 m6 s12 padding-4">
+      <div class="image-container"> <img class="image" src="http://eshin1010.github.io/images/artfall-event-1.png">
+      </div>
+     </div>
+    <div class="col l4 m6 s12 padding-4">
+      <div class="image-container"> <img class="image" src="http://eshin1010.github.io/images/artfall-event-4.png">
+      </div>
+     </div>
+    <div class="col l4 m6 s12 padding-4">
+      <div class="image-container"> <img class="image" src="http://eshin1010.github.io/images/artfall-event-2.png">
+      </div>
+     </div>
+    <div class="col l4 m6 s12 padding-4">
+      <div class="image-container"> <img class="image" src="http://eshin1010.github.io/images/artfall-event-6.png">
+      </div>
+     </div>
+  </div>
+    <!--/row-->
+  </div>
+  <!--/portfolio--> 
+  
+  <!-- End Page Content --> 
+</div>
+
+<!-- Footer -->
+<footer class="container padding-64 light-grey center large"> </footer>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+</html>
