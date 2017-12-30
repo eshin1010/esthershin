@@ -17,9 +17,8 @@ body {
 .panel.center {
 	padding:100px 16px
 }
-portfolio.row.full {
+.portfolio .row.full {
 	width: 100% !important
-}
 }
 article, aside, figcaption, figure, footer, header, main, menu, nav, section {
 	display: block
