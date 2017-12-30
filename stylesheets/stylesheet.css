@@ -158,7 +158,8 @@ a {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center
+	align-items: center;
+	padding: 5px;
 }
 .row .col img {
 	width: 100%;
