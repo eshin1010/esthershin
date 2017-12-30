@@ -17,6 +17,10 @@ body {
 .panel.center {
 	padding:100px 16px
 }
+.full {
+	width: 100% !important
+}
+}
 article, aside, figcaption, figure, footer, header, main, menu, nav, section {
 	display: block
 }
