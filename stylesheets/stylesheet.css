@@ -305,6 +305,9 @@ a {
 .bar-item.w3-mobile, .w3-dropdown-hover.w3-mobile, .w3-dropdown-click.w3-mobile {
 	text-align: center
 }
+.row.reverse {
+	flex-direction: column-reverse
+}
 }
 @media (max-width:768px) {
 .w3-modal-content {
