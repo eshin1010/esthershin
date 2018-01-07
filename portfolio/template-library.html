@@ -1,1 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Esther Shin - Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="http://eshin1010.github.io/images/blue-orange.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://eshin1010.github.io/stylesheets/stylesheet.css">
+</head>
 
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="content"> 
+  
+  <!-- Header -->
+  <header class="panel center opacity">
+    <h1 class="large">WEB DEVELOPER & DESIGNER</h1>
+    <h1 style="color: #6F9FB6">Esther Shin</h1>
+    <div class="padding-32">
+      <div class="bar border"> <a href=".." class="bar-item button">Home</a> <a href="../portfolio.html" class="bar-item button light-grey">Portfolio</a> <a href="#" class="bar-item button">Contact</a> </div>
+    </div>
+    <div style="text-align: center">
+      <h3>automotiveMastermind</h3>
+      <h4>emails & landing pages</h4>
+    </div>
+  </header>
+  
+  <!-- Photo Grid -->
+  
+  <div class="portfolio">
+    <div class="row reverse">
+      <div class="col l8 m8 s12 padding-4">
+        <div class="image-container"> <img class="image" src="https://eshin1010.github.io/images/LP-aM-referral.png"> </div>
+      </div>
+      <div class="col l4 m4 s12 padding-16">
+        <h4>referral program landing page</h4>
+        <p>For the launch of a new program, I created a landing page with clean and modern design that stayed consistent with the brand's style.</p>
+      </div>
+    </div>
+    <!--/row-->
+    <div class="row light-grey full" style="flex-direction: column; padding-bottom: 30px">
+      <h4 style="margin: 10px auto">referral program landing page</h4>
+      <p>design elements</p>
+      <div class="content display-container" style="width: 100%"> <img class="mySlides" src="https://eshin1010.github.io/images/aM-referral-boxes.png" style="width:100%; max-width: 800px; margin: 0 auto"> <img class="mySlides" src="https://eshin1010.github.io/images/aM-referral-form.png" style="width:100%; max-width: 800px; margin: 0 auto"> <img class="mySlides" src="https://eshin1010.github.io/images/aM-referral-steps.png" style="width:100%; max-width: 800px; margin: 0 auto">
+        <button class="button w3-black display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="button w3-black display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+    </div>
+    <div class="row" style="justify-content: flex-end">
+      <div class="col l5 m5 s12 padding-16">
+        <h4>monthly newsletter email</h4>
+        <p>For their monthly newsletter, I modified the design to create an email template that is mobile responsive.</p>
+      </div>
+      <div class="col l7 m7 s12 padding-4">
+        <div class="image-container"> <img class="image email" src="https://eshin1010.github.io/images/email-aM-newsletter.png"> </div>
+      </div>
+    </div>
+    <!--/row-->
+    <div class="row reverse">
+      <div class="col l7 m7 s12 padding-4">
+        <div class="image-container"> <img class="image email" src="http://eshin1010.github.io/images/email-aM-conquest.png"> </div>
+      </div>
+      <div class="col l5 m5 s12 padding-16">
+        <h4>invitation email</h4>
+        <p>Side-by-side text is stacked for mobile to make an optimal layout for each device.</p>
+      </div>
+    </div>
+    <!--/row-->
+    <div class="row">
+      <div class="col l4 m4 s12 padding-16">
+        <h4>invitation landing page with form</h4>
+        <p>Landing page with form developed in Pardot.</p>
+      </div>
+      <div class="col l8 m8 s12 padding-4">
+        <div class="image-container"> <img class="image" src="https://eshin1010.github.io/images/LP-aM-conquest.png"> </div>
+      </div>
+    </div>
+    <!--/row-->
+    
+  </div>
+  <!--/portfolio--> 
+  
+  <!-- End Page Content --> 
+</div>
+
+<!-- Footer -->
+<footer class="container padding-64 light-grey center large"> </footer>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+</html>
