@@ -176,8 +176,8 @@ a {
 	margin: 0 auto;
 	padding: 20px;
 }
-.row.accent {
-	rgba(111,159,182,1)
+.row.blue {
+	rgba(111,159,182,.3)
 }
 .col.s1 {
 	width: 8.33333%
