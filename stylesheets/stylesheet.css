@@ -486,18 +486,13 @@ a {
 	color: #000!important;
 	background-color: #f1f1f1!important
 }
+.light-blue {
+	color: #000!important;
+	background-color: rgba(111,159,182,.25)!important
+}
 .w3-dark-grey, .w3-hover-dark-grey:hover, .w3-dark-gray, .w3-hover-dark-gray:hover {
 	color: #fff!important;
 	background-color: #616161!important
-}
-.w3-text-green, .w3-hover-text-green:hover {
-	color: #4CAF50!important
-}
-.w3-text-purple, .w3-hover-text-purple:hover {
-	color: #9c27b0!important
-}
-.w3-text-sand, .w3-hover-text-sand:hover {
-	color: #fdf5e6!important
 }
 .w3-text-white, .w3-hover-text-white:hover {
 	color: #fff!important
