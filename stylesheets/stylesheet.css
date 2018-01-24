@@ -490,6 +490,9 @@ a {
 	color: #000!important;
 	background-color: rgba(111,159,182,.2)!important
 }
+.text-accent, .hover-text-accent:hover {
+	color: #6F9FB6
+}
 .w3-dark-grey, .w3-hover-dark-grey:hover, .w3-dark-gray, .w3-hover-dark-gray:hover {
 	color: #fff!important;
 	background-color: #616161!important
