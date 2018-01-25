@@ -7,6 +7,7 @@
 <link rel="icon" type="image/png" href="http://eshin1010.github.io/images/blue-orange.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://eshin1010.github.io/stylesheets/stylesheet.css">
+  <script src="https://eshin1010.github.io/javascripts/main.js"></script>
 </head>
 
 <body>
@@ -87,24 +88,5 @@
 
 <!-- Footer -->
 <footer class="container padding-64 light-grey center large"> </footer>
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
 </body>
 </html>
