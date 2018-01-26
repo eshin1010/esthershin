@@ -291,6 +291,10 @@ a {
 	width: 99.99999%
 }
 }
+  .mySlides {
+    width:100%;
+    margin: 0 auto;
+  }
 .content {
 	margin: auto
 }
