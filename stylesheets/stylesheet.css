@@ -294,6 +294,9 @@ a {
 .content {
 	margin: auto
 }
+.mySlides p {
+	text-align: center;
+}
 @media (max-width:600px) {
 .w3-modal-content {
 	margin: 0 10px;
