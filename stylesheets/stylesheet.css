@@ -374,6 +374,15 @@ a {
 .w3-bottom {
 	bottom: 0
 }
+.accent-circle {
+	border-radius: 50%;
+	border: 2px solid #6F9FB6;
+	padding: 20px;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	margin: 10px
+}
 .w3-overlay {
 	position: fixed;
 	display: none;
