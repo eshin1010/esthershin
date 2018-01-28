@@ -83,6 +83,9 @@ hr {
 a {
 	color: inherit
 }
+li {
+	padding-bottom: 4px;
+}
 .w3-main, #main {
 	transition: margin-left .4s
 }
