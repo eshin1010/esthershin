@@ -183,6 +183,9 @@ li {
 .row.blue {
 	rgba(111,159,182,.3)
 }
+footer {
+	margin-top: 50px;
+}
 .col.s1 {
 	width: 8.33333%
 }
