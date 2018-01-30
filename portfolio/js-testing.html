@@ -1,50 +1,50 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-  <head>
-    <title>Esther Shin</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="http://eshin1010.github.io/images/blue-orange.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://eshin1010.github.io/stylesheets/stylesheet.css">
-  </head>
-  <body>
-    <div class="content padding-64" style="max-width:1200px">
-   <!-- <button type="button"
+<head>
+<title>Esther Shin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="http://eshin1010.github.io/images/blue-orange.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://eshin1010.github.io/stylesheets/stylesheet.css">
+</head>
+<body>
+<div class="content padding-64" style="max-width:1200px"> 
+  <!-- <button type="button"
 onclick="document.getElementById('today').innerHTML = Date()">
 Click me to display Date and Time.</button> -->
-      <p id="today"></p>
-      <p id="demo">JavaScript can change HTML content.</p>
-      <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
-      <div>
-        <p>In this case JavaScript changes the src (source) attribute of an image.</p>
-        <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
-        <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
-        <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
-      </div>
-      <div>
-        <p id="color">COLOR</p>
-        <button type="button" onclick="document.getElementById('color').style.fontSize='35px'">Big</button>
-         <button type="button" onclick="document.getElementById('color').style.fontSize='12px'">Small</button>
-       <button type="button" onclick="document.getElementById('color').style.color='green'">Green</button>
-        <button type="button" onclick="document.getElementById('color').style.color='purple'">Purple</button>
-        <button type="button" onclick="document.getElementById('color').style.color='orange'">Orange</button>
-      </div>
-      <div>
-        <img id="sweater" src="/images/clothes-outline-cardigan.png" style="width: 300px"/>
-       <button type="button" onclick="document.getElementById('sweater').style.background='green'">Green</button>
-        <button type="button" onclick="document.getElementById('sweater').style.background='purple'">Purple</button>
-        <button type="button" onclick="document.getElementById('sweater').style.background='orange'">Orange</button>
-      </div>
-      <div>
-        <img id="jeans" src="/images/clothes-outline-skinny-jeans.png" style="width: 300px"/>
-       <button type="button" onclick="document.getElementById('jeans').style.background='green'">Green</button>
-        <button type="button" onclick="document.getElementById('jeans').style.background='purple'">Purple</button>
-        <button type="button" onclick="document.getElementById('jeans').style.background='orange'">Orange</button>
-        <button type="button" onclick="document.getElementById('jeans').style.background='brown'">Brown</button>
-      </div>
+  <p id="today"></p>
+  <p id="demo">JavaScript can change HTML content.</p>
+  <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+  <div>
+    <p>In this case JavaScript changes the src (source) attribute of an image.</p>
+    <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
+    <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
+  </div>
+  <div>
+    <p id="color">COLOR</p>
+    <button type="button" onclick="document.getElementById('color').style.fontSize='35px'">Big</button>
+    <button type="button" onclick="document.getElementById('color').style.fontSize='12px'">Small</button>
+    <button type="button" onclick="document.getElementById('color').style.color='green'">Green</button>
+    <button type="button" onclick="document.getElementById('color').style.color='purple'">Purple</button>
+    <button type="button" onclick="document.getElementById('color').style.color='orange'">Orange</button>
+  </div>
+  <div id="clothes">
+    <div> <img id="sweater" src="/images/clothes-outline-cardigan.png" style="width: 300px"/>
+      <button type="button" onclick="document.getElementById('sweater').style.background='green'">Green</button>
+      <button type="button" onclick="document.getElementById('sweater').style.background='purple'">Purple</button>
+      <button type="button" onclick="document.getElementById('sweater').style.background='orange'">Orange</button>
     </div>
-    <script>
+    <div> <img id="jeans" src="/images/clothes-outline-skinny-jeans.png" style="width: 300px"/>
+      <button type="button" onclick="document.getElementById('jeans').style.background='green'">Green</button>
+      <button type="button" onclick="document.getElementById('jeans').style.background='purple'">Purple</button>
+      <button type="button" onclick="document.getElementById('jeans').style.background='orange'">Orange</button>
+      <button type="button" onclick="document.getElementById('jeans').style.background='brown'">Brown</button>
+    </div>
+  </div>
+</div>
+<script>
       document.getElementById('today').innerHTML = Date()
     </script>
 </body>
