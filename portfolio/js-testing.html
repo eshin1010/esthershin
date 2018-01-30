@@ -7,9 +7,6 @@
     <link rel="icon" type="image/png" href="http://eshin1010.github.io/images/blue-orange.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://eshin1010.github.io/stylesheets/stylesheet.css">
-    <script>
-      document.getElementById('today').innerHTML = Date()
-    </script>
   </head>
   <body>
     <div class="content padding-64" style="max-width:1200px">
@@ -33,6 +30,15 @@ Click me to display Date and Time.</button> -->
         <button type="button" onclick="document.getElementById('color').style.color='purple'">Purple</button>
         <button type="button" onclick="document.getElementById('color').style.color='orange'">Orange</button>
       </div>
+      <div>
+        <img id="sweater" src="/images/clothes-outline-cardigan.png">COLOR</p>
+       <button type="button" onclick="document.getElementById('sweater').style.background='green'">Green</button>
+        <button type="button" onclick="document.getElementById('sweater').style.background='purple'">Purple</button>
+        <button type="button" onclick="document.getElementById('sweater').style.background='orange'">Orange</button>
+      </div>
     </div>
+    <script>
+      document.getElementById('today').innerHTML = Date()
+    </script>
 </body>
 </html>
