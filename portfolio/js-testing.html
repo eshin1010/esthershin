@@ -14,28 +14,19 @@
 onclick="document.getElementById('today').innerHTML = Date()">
 Click me to display Date and Time.</button> -->
   <p id="today"></p>
-  <p id="demo">JavaScript can change HTML content.</p>
-  <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+  <p id="demo">Change HTML content.</p>
+  <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello!"'>Click Me!</button>
   <div>
     <p>In this case JavaScript changes the src (source) attribute of an image.</p>
     <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
     <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
     <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
   </div>
-  <div>
-    <p id="color">COLOR</p>
-    <button type="button" onclick="document.getElementById('color').style.fontSize='35px'">Big</button>
-    <button type="button" onclick="document.getElementById('color').style.fontSize='12px'">Small</button>
-    <button type="button" onclick="document.getElementById('color').style.color='green'">Green</button>
-    <button type="button" onclick="document.getElementById('color').style.color='purple'">Purple</button>
-    <button type="button" onclick="document.getElementById('color').style.color='orange'">Orange</button>
-  </div>
   <div id="clothes">
     <div> <img id="top" src="/images/clothes-outline-cardigan.png" style="width: 300px"/>
       <button type="button" onclick="document.getElementById('top').style.background='green'">Green</button>
       <button type="button" onclick="document.getElementById('top').style.background='purple'">Purple</button>
       <button type="button" onclick="document.getElementById('top').style.background='orange'">Orange</button>
-      <button type="button" onclick="document.getElementById('top').style.background="url('https://d2d00szk9na1qq.cloudfront.net/Product/a67d11dc-4d15-4c66-a6df-897228371912/Images/Large_DL-794.jpg')"">Denim</button>
     </div>
     <div> <img id="bottom" src="/images/clothes-outline-skinny-jeans.png" style="width: 300px"/>
       <button type="button" onclick="clothesGreen()">Green</button>
