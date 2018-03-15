@@ -1,0 +1,1594 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css" media="screen">
+  /* RESET */ .elq-form * {
+    margin: 0 auto;
+    padding: 0;
+	font-family: 'Montserrat', 'Raleway', arial;
+	max-width: 600px;
+  }
+  .elq-form input, textarea {
+    -webkit-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    box-sizing:content-box;
+  }
+  .elq-form button,input[type=reset],input[type=button],input[type=submit],input[type=checkbox],input[type=radio],select {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+  }
+  .elq-form input[type=text] {
+	  width: 99% !important;
+  }
+  .elq-form input[type="submit"] {
+    text-align: center !important;
+    border-radius: 0px !important;
+    background-color: #ff6a00 !important;
+    color: #ffffff !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    margin-top: 30px !important;
+    border: solid 2px #ff6b02;
+    transition: all .4s ease-in-out;
+    padding: 8px 16px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-appearance: none;
+}
+.elq-form input[type="submit"]:hover {
+    background-color: #DB5B27 !important;
+}
+}
+  /* GENERIC */.elq-form input {
+    height: 16px;
+    line-height: 16px;
+  }
+  .elq-form .item-padding {
+    padding:6px 5px 9px 9px;
+  }
+  .elq-form .pp-group {
+    padding:0px 5px 0px 9px;
+  }
+  .elq-form .pp-field {
+    padding:6px 0px 9px 0px;
+  }
+  .elq-form .field-wrapper.individual {
+    float: left;
+    width: 100%;
+    clear: both;
+	text-align: left;
+  }
+  .elq-form .field-p {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  .elq-form .zIndex-fix {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .elq-form .field-design {
+    position:absolute;
+    z-index:2;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:0;
+    padding:0;
+  }
+  .elq-form .no-fields-prompt {
+    float: left;
+    width: 100%;
+    height: 150px;
+    padding-top: 50px;
+    clear: both;
+  }
+  /* SECTION BREAKS */.elq-form .section-break {
+    float:left;
+    width: 97%;
+    margin-right:2%;
+    margin-left:1%;
+    padding-bottom:6px;
+  }
+  .elq-form .section-break .heading {
+    width:100%;
+    font-weight: bold;
+    margin:0;
+    padding:0;
+  }
+  /* LABEL */.elq-form .required {
+    color: red !important;
+    display: inline;
+    float: none;
+    font-weight: bold;
+    margin: 0pt 0pt 0pt;
+    padding: 0pt 0pt 0pt;
+  }
+  /* FIELD GROUP */.elq-form .field-group {
+    float: left;
+    clear: both;
+  }
+  .elq-form .field-group.large {
+    width:100%;
+  }
+  .elq-form .field-group.medium {
+    width:51%;
+  }
+  .elq-form .field-group.small {
+    width:31%;
+  }
+  .elq-form .field-group .label {
+    float:left;
+    width:97%;
+    margin-right:2%;
+    margin-left:1%;
+    padding-bottom:6px;
+    font-weight: bold;
+  }
+  .elq-form .field-group .field-style {
+    float: left;
+  }
+  .elq-form .progressive-profile .pp-inner {
+    float: left;
+    clear: both;
+  }
+  .elq-form .progressive-profile .pp-inner.large {
+    width:100%;
+  }
+  .elq-form .progressive-profile .pp-inner.medium {
+    width:51%;
+  }
+  .elq-form .progressive-profile .pp-inner.small {
+    width:31%;
+  }
+  /* RADIO */.elq-form .radio-option {
+    display: inline-block;
+  }
+  .elq-form .radio-option .label {
+    display:block;
+    float:left;
+    padding-right:10px;
+    padding-left:22px;
+    text-indent:-22px;
+  }
+  .elq-form .radio-option .input {
+    vertical-align:middle;
+    margin-right:7px;
+  }
+  .elq-form .radio-option .inner {
+    vertical-align:middle;
+  }
+  /* CHECKBOX */.elq-form .checkbox-span {
+    display:inline-block;
+  }
+  .elq-form .checkbox-label {
+    margin-left:4px;
+  }
+  /* INPUT */.elq-form .accept-default {
+    width:100%;
+  }
+  /* SIZING */.elq-form .field-style {
+    margin-right:2%;
+    margin-left:2%;
+  }
+  .elq-form .field-style._25 {
+    width:21%;
+  }
+  .elq-form .field-style._50 {
+    width:46%;
+  }
+  .elq-form .field-style._50_left {
+    clear:left;
+    width:46%;
+  }
+  .elq-form .field-style._75 {
+    width:71%;
+  }
+  .elq-form .field-style._100 {
+    width:96%;
+  }
+  .elq-form .field-size-top-small {
+    width:30%;
+  }
+  .elq-form .field-size-top-medium {
+    width:75%;
+  }
+  .elq-form .field-size-top-large {
+    width:100%;
+	padding: 4px;
+  }
+  .elq-form .field-size-left-small {
+    width:21%;
+  }
+  .elq-form .field-size-left-medium {
+    width:46%;
+  }
+  .elq-form .field-size-left-large {
+    width:60%;
+  }
+  /* INSTRUCTIONS */.elq-form .instructions.default {
+    color:#444444;
+    display:block;
+    font-size:10px;
+    padding:6px 0pt 3px;
+  }
+  .elq-form .instructions.group {
+    float:left;
+    width:97%;
+    margin-right:2%;
+    margin-left:2%;
+    padding:6px 0pt 3px;
+    color:#444444;
+    display:block;
+    font-size:10px;
+  }
+  .elq-form .instructions.left-single {
+    margin:0 0 0 33%;
+  }
+  .elq-form .instructions-other {
+    margin:0;
+  }
+  /* POSITIONING */.elq-form .label-position.left {
+    display:block;
+    line-height:150%;
+    padding:1px 0pt 3px;
+    float:left;
+    width:31%;
+    margin:0pt 15px 0pt 0pt;
+    word-wrap:break-word;
+  }
+  .elq-form .label-position.top {
+    display:block;
+    line-height:150%;
+    padding:8px 0 1px;
+    white-space:nowrap;
+	font-weight: 600;
+	color: #222;
+  }
+  .elq-form .label-position.alignment-left {
+    text-align: left;
+  }
+  .elq-form .label-position.alignment-right {
+    text-align: right;
+  }
+  /* LIST ORDER */.elq-form .list-order {
+    display:block;
+  }
+  .elq-form .list-order.oneColumn {
+    margin:0pt 7px 0pt 0pt;
+    width:100%;
+    clear:both;
+  }
+  .elq-form .list-order.twoColumn {
+    float:left;
+    margin:0pt 7px 0pt 0pt;
+    width:38%;
+  }
+  .elq-form .list-order.threeColumn {
+    float:left;
+    margin:0pt 7px 0pt 0pt;
+    width:30%;
+  }
+  .elq-form .list-order.oneColumnLeft {
+    float:left;
+    margin:0pt 7px 0pt 0pt;
+    width:100%;
+  }
+  .elq-form .list-order.twoColumnLeft {
+    float:left;
+    margin:0pt 7px 0pt 0pt;
+    width:38%;
+  }
+  .elq-form .list-order.threeColumnLeft {
+    float:left;
+    margin:0pt 7px 0pt 0pt;
+    width:30%;
+  }
+  /* GRID STYLE */.elq-form .grid-style {
+    display:inline;
+    float:left;
+    margin-left:2%;
+    margin-right:2%;
+  }
+  .elq-form .grid-style._25 {
+    width:21%;
+  }
+  .elq-form .grid-style._50 {
+    width:46%;
+  }
+  .elq-form .grid-style._75 {
+    width:71%;
+  }
+  .elq-form .grid-style._100 {
+    width:96%;
+  }
+</style>
+</head>
+<body>
+<div>
+  <form method="post" name="WF_00051_Gartner:_Top_10_Strategic_Technology_Tren" action="https://s926879866.t.eloqua.com/e/f2" onsubmit="setTimeout(function(){if(document.querySelector){var s=document.querySelector('form#form49 input[type=submit]');if(s){s.disabled=true;}}},100);return true;" id="form49" class="elq-form" >
+    <input value="WF_00051_Gartner:_Top_10_Strategic_Technology_Tren" type="hidden" name="elqFormName"  />
+    <input value="926879866" type="hidden" name="elqSiteId"  />
+    <input name="elqCampaignId" type="hidden"  />
+    <div id="formElement0" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size" >
+      <div class="field-wrapper" >
+      </div>
+    </div>
+    <div id="formElement1" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size" >
+      <div class="field-wrapper" >
+      </div>
+      <div class="individual field-wrapper" >
+        <div class="_100 field-style" >
+          <p class="field-p" >
+            <label for="field1" class="label-position top " >
+              Business Email
+              <span class="required" >
+                *
+              </span>
+            </label>
+            <input id="field1" name="emailAddress" type="text" value="<eloqua type='emailfield' syntax='EmailAddress' />" class="field-size-top-large"  />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="formElement2" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size" >
+      <div class="field-wrapper" >
+      </div>
+      <div class="individual field-wrapper" >
+        <div class="_100 field-style" >
+          <p class="field-p" >
+            <label for="field2" class="label-position top " >
+              Job Level
+              <span class="required" >
+                *
+              </span>
+            </label>
+            <select id="field2" name="jobLevel1" class="field-size-top-large" >
+              <option value="" >
+                - Please Select -
+              </option>
+              <option value="Individual Contributor" >
+                Individual Contributor
+              </option>
+              <option value="Manager" >
+                Manager
+              </option>
+              <option value="Director" >
+                Director
+              </option>
+              <option value="VP" >
+                VP
+              </option>
+              <option value="Executive" >
+                Executive
+              </option>
+              <option value="Other" >
+                Other
+              </option>
+            </select>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="formElement3" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size" >
+      <div class="field-wrapper" >
+      </div>
+      <div class="individual field-wrapper" >
+        <div class="_100 field-style" >
+          <p class="field-p" >
+            <label for="field3" class="label-position top " >
+              Job Function
+              <span class="required" >
+                *
+              </span>
+            </label>
+            <select id="field3" name="jobFunction1" class="field-size-top-large" >
+              <option value="" >
+                -- Please Select --
+              </option>
+              <option value="Architecture" >
+                Architecture
+              </option>
+              <option value="Business Development & Sales" >
+                Business Development &amp; Sales
+              </option>
+              <option value="Consulting" >
+                Consulting
+              </option>
+              <option value="Data Management" >
+                Data Management
+              </option>
+              <option value="Development" >
+                Development
+              </option>
+              <option value="Finance" >
+                Finance
+              </option>
+              <option value="Human Resources" >
+                Human Resources
+              </option>
+              <option value="Innovation & Transformation" >
+                Innovation &amp; Transformation
+              </option>
+              <option value="IT" >
+                IT
+              </option>
+              <option value=" Legal" >
+                Legal
+              </option>
+              <option value="Marketing" >
+                Marketing
+              </option>
+              <option value="Operations" >
+                Operations
+              </option>
+              <option value="Product Management" >
+                Product Management
+              </option>
+              <option value="Services & Support" >
+                Services &amp; Support
+              </option>
+              <option value="Other" >
+                Other
+              </option>
+            </select>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="formElement4" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size" >
+      <div class="field-wrapper" >
+      </div>
+      <div class="individual field-wrapper" >
+        <div class="_100 field-style" >
+          <p class="field-p" >
+            <label for="field4" class="label-position top " >
+              Company Name
+              <span class="required" >
+                *
+              </span>
+            </label>
+            <input id="field4" name="company" type="text" value="<eloqua type='emailfield' syntax='Company' />" class="field-size-top-large"  />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="formElement5" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size" >
+      <div class="field-wrapper" >
+      </div>
+      <div class="individual field-wrapper" >
+        <div class="_100 field-style" >
+          <p class="field-p" >
+            <label for="field5" class="label-position top " >
+              Industry
+              <span class="required" >
+                *
+              </span>
+            </label>
+            <select id="field5" name="industry1" class="field-size-top-large" >
+              <option value="" selected="selected" >
+                Please Select...
+              </option>
+              <option value="Banking" >
+                Banking
+              </option>
+              <option value="BPO" >
+                BPO
+              </option>
+              <option value="Consulting" >
+                Consulting
+              </option>
+              <option value="eCommerce" >
+                eCommerce
+              </option>
+              <option value="Financial Services" >
+                Financial Services
+              </option>
+              <option value="Healthcare" >
+                Healthcare
+              </option>
+              <option value="Information Services" >
+                Information Services
+              </option>
+              <option value="Insurance" >
+                Insurance
+              </option>
+              <option value="Logistics & Transportation" >
+                Logistics &amp; Transportation
+              </option>
+              <option value="Manufacturing" >
+                Manufacturing
+              </option>
+              <option value="Marketing & Advertising" >
+                Marketing &amp; Advertising
+              </option>
+              <option value="Pharmaceuticals" >
+                Pharmaceuticals
+              </option>
+              <option value="Retail" >
+                Retail
+              </option>
+              <option value="Staffing & Recruiting" >
+                Staffing &amp; Recruiting
+              </option>
+              <option value="System Integrator" >
+                System Integrator
+              </option>
+              <option value="Technology" >
+                Technology
+              </option>
+              <option value="Telecommunications" >
+                Telecommunications
+              </option>
+              <option value="Utilities" >
+                Utilities
+              </option>
+              <option value="Other" >
+                Other
+              </option>
+            </select>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="formElement6" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size" >
+      <div class="field-wrapper" >
+      </div>
+      <div class="individual field-wrapper" >
+        <div class="_100 field-style" >
+          <p class="field-p" >
+            <label for="field6" class="label-position top " >
+              Company Size (# of FTEs)
+              <span class="required" >
+                *
+              </span>
+            </label>
+            <select id="field6" name="companySizeFTEs1" class="field-size-top-large" >
+              <option value="" >
+                - Please Select -
+              </option>
+              <option value="Myself only" >
+                Myself only
+              </option>
+              <option value="2-10" >
+                2-10
+              </option>
+              <option value="11-50" >
+                11-50
+              </option>
+              <option value="51-200" >
+                51-200
+              </option>
+              <option value="201-500" >
+                201-500
+              </option>
+              <option value="501-1000" >
+                501-1000
+              </option>
+              <option value="1001-5000" >
+                1001-5000
+              </option>
+              <option value="5001-10000" >
+                5001-10000
+              </option>
+              <option value="10001+" >
+                10001+
+              </option>
+            </select>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="formElement7" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size" >
+      <div class="field-wrapper" >
+      </div>
+      <div class="individual field-wrapper" >
+        <div class="_100 field-style" >
+          <p class="field-p" >
+            <label for="field7" class="label-position top " >
+
+              Country
+              <span class="required" >
+                *
+              </span>
+            </label>
+            <select id="field7" name="country" data-value="<eloqua type='emailfield' syntax='Country' />" class="field-size-top-large" >
+  <option value="" >
+    Please select
+  </option>
+  <option value="US" >
+    United States
+  </option>
+  <option value="GB" >
+    United Kingdom
+  </option>
+  <option value="CA" >
+    Canada
+  </option>
+  <option value="IN" >
+    India
+  </option>
+  <option value="NL" >
+    Netherlands
+  </option>
+  <option value="AU" >
+    Australia
+  </option>
+  <option value="ZA" >
+    South Africa
+  </option>
+  <option value="FR" >
+    France
+  </option>
+  <option value="DE" >
+    Germany
+  </option>
+  <option value="SG" >
+    Singapore
+  </option>
+  <option value="SE" >
+    Sweden
+  </option>
+  <option value="BR" >
+    Brazil
+  </option>
+  <option value="" >
+    --------------
+  </option>
+  <option value="AF" >
+    Afghanistan
+  </option>
+  <option value="AX" >
+    Åland Islands
+  </option>
+  <option value="AL" >
+    Albania
+  </option>
+  <option value="DZ" >
+    Algeria
+  </option>
+  <option value="AS" >
+    American Samoa
+  </option>
+  <option value="AD" >
+    Andorra
+  </option>
+  <option value="AO" >
+    Angola
+  </option>
+  <option value="AI" >
+    Anguilla
+  </option>
+  <option value="AQ" >
+    Antarctica
+  </option>
+  <option value="AG" >
+    Antigua and Barbuda
+  </option>
+  <option value="AR" >
+    Argentina
+  </option>
+  <option value="AM" >
+    Armenia
+  </option>
+  <option value="AW" >
+    Aruba
+  </option>
+  <option value="AU" >
+    Australia
+  </option>
+  <option value="AT" >
+    Austria
+  </option>
+  <option value="AZ" >
+    Azerbaijan
+  </option>
+  <option value="BS" >
+    Bahamas
+  </option>
+  <option value="BH" >
+    Bahrain
+  </option>
+  <option value="BD" >
+    Bangladesh
+  </option>
+  <option value="BB" >
+    Barbados
+  </option>
+  <option value="BY" >
+    Belarus
+  </option>
+  <option value="BE" >
+    Belgium
+  </option>
+  <option value="BZ" >
+    Belize
+  </option>
+  <option value="BJ" >
+    Benin
+  </option>
+  <option value="BM" >
+    Bermuda
+  </option>
+  <option value="BT" >
+    Bhutan
+  </option>
+  <option value="BO" >
+    Bolivia
+  </option>
+  <option value="BA" >
+    Bosnia and Herzegovina
+  </option>
+  <option value="BW" >
+    Botswana
+  </option>
+  <option value="BV" >
+    Bouvet Island
+  </option>
+  <option value="BR" >
+    Brazil
+  </option>
+  <option value="IO" >
+    Brit/Indian Ocean Terr.
+  </option>
+  <option value="BN" >
+    Brunei Darussalam
+  </option>
+  <option value="BG" >
+    Bulgaria
+  </option>
+  <option value="BF" >
+    Burkina Faso
+  </option>
+  <option value="BI" >
+    Burundi
+  </option>
+  <option value="KH" >
+    Cambodia
+  </option>
+  <option value="CM" >
+    Cameroon
+  </option>
+  <option value="CA" >
+    Canada
+  </option>
+  <option value="CV" >
+    Cape Verde
+  </option>
+  <option value="KY" >
+    Cayman Islands
+  </option>
+  <option value="CF" >
+    Central African Republic
+  </option>
+  <option value="TD" >
+    Chad
+  </option>
+  <option value="CL" >
+    Chile
+  </option>
+  <option value="CN" >
+    China
+  </option>
+  <option value="CX" >
+    Christmas Island
+  </option>
+  <option value="CC" >
+    Cocos (Keeling) Islands
+  </option>
+  <option value="CO" >
+    Colombia
+  </option>
+  <option value="KM" >
+    Comoros
+  </option>
+  <option value="CG" >
+    Congo
+  </option>
+  <option value="CD" >
+    Congo, The Dem. Republic Of
+  </option>
+  <option value="CK" >
+    Cook Islands
+  </option>
+  <option value="CR" >
+    Costa Rica
+  </option>
+  <option value="CI" >
+    Côte d'Ivoire
+  </option>
+  <option value="HR" >
+    Croatia
+  </option>
+  <option value="CU" >
+    Cuba
+  </option>
+  <option value="CY" >
+    Cyprus
+  </option>
+  <option value="CZ" >
+    Czech Republic
+  </option>
+  <option value="DK" >
+    Denmark
+  </option>
+  <option value="DJ" >
+    Djibouti
+  </option>
+  <option value="DM" >
+    Dominica
+  </option>
+  <option value="DO" >
+    Dominican Republic
+  </option>
+  <option value="EC" >
+    Ecuador
+  </option>
+  <option value="EG" >
+    Egypt
+  </option>
+  <option value="SV" >
+    El Salvador
+  </option>
+  <option value="GQ" >
+    Equatorial Guinea
+  </option>
+  <option value="ER" >
+    Eritrea
+  </option>
+  <option value="EE" >
+    Estonia
+  </option>
+  <option value="ET" >
+    Ethiopia
+  </option>
+  <option value="FK" >
+    Falkland Islands
+  </option>
+  <option value="FO" >
+    Faroe Islands
+  </option>
+  <option value="FJ" >
+    Fiji
+  </option>
+  <option value="FI" >
+    Finland
+  </option>
+  <option value="FR" >
+    France
+  </option>
+  <option value="GF" >
+    French Guiana
+  </option>
+  <option value="PF" >
+    French Polynesia
+  </option>
+  <option value="TF" >
+    French Southern Terr.
+  </option>
+  <option value="GA" >
+    Gabon
+  </option>
+  <option value="GM" >
+    Gambia
+  </option>
+  <option value="GE" >
+    Georgia
+  </option>
+  <option value="DE" >
+    Germany
+  </option>
+  <option value="GH" >
+    Ghana
+  </option>
+  <option value="GI" >
+    Gibraltar
+  </option>
+  <option value="GB" >
+    United Kingdom
+  </option>
+  <option value="GR" >
+    Greece
+  </option>
+  <option value="GL" >
+    Greenland
+  </option>
+  <option value="GD" >
+    Grenada
+  </option>
+  <option value="GP" >
+    Guadeloupe
+  </option>
+  <option value="GU" >
+    Guam
+  </option>
+  <option value="GT" >
+    Guatemala
+  </option>
+  <option value="GN" >
+    Guinea
+  </option>
+  <option value="GW" >
+    Guinea-Bissau
+  </option>
+  <option value="GY" >
+    Guyana
+  </option>
+  <option value="HT" >
+    Haiti
+  </option>
+  <option value="HM" >
+    Heard/McDonald Isls.
+  </option>
+  <option value="HN" >
+    Honduras
+  </option>
+  <option value="HK" >
+    Hong Kong
+  </option>
+  <option value="HU" >
+    Hungary
+  </option>
+  <option value="IS" >
+    Iceland
+  </option>
+  <option value="IN" >
+    India
+  </option>
+  <option value="ID" >
+    Indonesia
+  </option>
+  <option value="IR" >
+    Iran
+  </option>
+  <option value="IQ" >
+    Iraq
+  </option>
+  <option value="IE" >
+    Ireland
+  </option>
+  <option value="IL" >
+    Israel
+  </option>
+  <option value="IT" >
+    Italy
+  </option>
+  <option value="JM" >
+    Jamaica
+  </option>
+  <option value="JP" >
+    Japan
+  </option>
+  <option value="JO" >
+    Jordan
+  </option>
+  <option value="KZ" >
+    Kazakhstan
+  </option>
+  <option value="KE" >
+    Kenya
+  </option>
+  <option value="KI" >
+    Kiribati
+  </option>
+  <option value="KP" >
+    Korea (North)
+  </option>
+  <option value="KR" >
+    Korea (South)
+  </option>
+  <option value="KW" >
+    Kuwait
+  </option>
+  <option value="KG" >
+    Kyrgyzstan
+  </option>
+  <option value="LA" >
+    Laos
+  </option>
+  <option value="LV" >
+    Latvia
+  </option>
+  <option value="LB" >
+    Lebanon
+  </option>
+  <option value="LS" >
+    Lesotho
+  </option>
+  <option value="LR" >
+    Liberia
+  </option>
+  <option value="LY" >
+    Libya
+  </option>
+  <option value="LI" >
+    Liechtenstein
+  </option>
+  <option value="LT" >
+    Lithuania
+  </option>
+  <option value="LU" >
+    Luxembourg
+  </option>
+  <option value="MO" >
+    Macau
+  </option>
+  <option value="MK" >
+    Macedonia
+  </option>
+  <option value="MG" >
+    Madagascar
+  </option>
+  <option value="MW" >
+    Malawi
+  </option>
+  <option value="MY" >
+    Malaysia
+  </option>
+  <option value="MV" >
+    Maldives
+  </option>
+  <option value="ML" >
+    Mali
+  </option>
+  <option value="MT" >
+    Malta
+  </option>
+  <option value="MH" >
+    Marshall Islands
+  </option>
+  <option value="MQ" >
+    Martinique
+  </option>
+  <option value="MR" >
+    Mauritania
+  </option>
+  <option value="MU" >
+    Mauritius
+  </option>
+  <option value="YT" >
+    Mayotte
+  </option>
+  <option value="MX" >
+    Mexico
+  </option>
+  <option value="FM" >
+    Micronesia
+  </option>
+  <option value="MD" >
+    Moldova
+  </option>
+  <option value="MC" >
+    Monaco
+  </option>
+  <option value="MN" >
+    Mongolia
+  </option>
+  <option value="MS" >
+    Montserrat
+  </option>
+  <option value="MA" >
+    Morocco
+  </option>
+  <option value="MZ" >
+    Mozambique
+  </option>
+  <option value="MM" >
+    Myanmar
+  </option>
+  <option value="MP" >
+    N. Mariana Isls.
+  </option>
+  <option value="NA" >
+    Namibia
+  </option>
+  <option value="NR" >
+    Nauru
+  </option>
+  <option value="NP" >
+    Nepal
+  </option>
+  <option value="NL" >
+    Netherlands
+  </option>
+  <option value="AN" >
+    Netherlands Antilles
+  </option>
+  <option value="NC" >
+    New Caledonia
+  </option>
+  <option value="NZ" >
+    New Zealand
+  </option>
+  <option value="NI" >
+    Nicaragua
+  </option>
+  <option value="NE" >
+    Niger
+  </option>
+  <option value="NG" >
+    Nigeria
+  </option>
+  <option value="NU" >
+    Niue
+  </option>
+  <option value="NF" >
+    Norfolk Island
+  </option>
+  <option value="NO" >
+    Norway
+  </option>
+  <option value="OM" >
+    Oman
+  </option>
+  <option value="PK" >
+    Pakistan
+  </option>
+  <option value="PW" >
+    Palau
+  </option>
+  <option value="PS" >
+    Palestinian Territory, Occupied
+  </option>
+  <option value="PA" >
+    Panama
+  </option>
+  <option value="PG" >
+    Papua New Guinea
+  </option>
+  <option value="PY" >
+    Paraguay
+  </option>
+  <option value="PE" >
+    Peru
+  </option>
+  <option value="PH" >
+    Philippines
+  </option>
+  <option value="PN" >
+    Pitcairn
+  </option>
+  <option value="PL" >
+    Poland
+  </option>
+  <option value="PT" >
+    Portugal
+  </option>
+  <option value="PR" >
+    Puerto Rico
+  </option>
+  <option value="QA" >
+    Qatar
+  </option>
+  <option value="RE" >
+    Reunion
+  </option>
+  <option value="RO" >
+    Romania
+  </option>
+  <option value="RU" >
+    Russian Federation
+  </option>
+  <option value="RW" >
+    Rwanda
+  </option>
+  <option value="KN" >
+    Saint Kitts and Nevis
+  </option>
+  <option value="LC" >
+    Saint Lucia
+  </option>
+  <option value="WS" >
+    Samoa
+  </option>
+  <option value="SM" >
+    San Marino
+  </option>
+  <option value="ST" >
+    Sao Tome/Principe
+  </option>
+  <option value="SA" >
+    Saudi Arabia
+  </option>
+  <option value="SN" >
+    Senegal
+  </option>
+  <option value="CS" >
+    Serbia and Montenegro
+  </option>
+  <option value="SC" >
+    Seychelles
+  </option>
+  <option value="SL" >
+    Sierra Leone
+  </option>
+  <option value="SG" >
+    Singapore
+  </option>
+  <option value="SK" >
+    Slovak Republic
+  </option>
+  <option value="SI" >
+    Slovenia
+  </option>
+  <option value="SB" >
+    Solomon Islands
+  </option>
+  <option value="SO" >
+    Somalia
+  </option>
+  <option value="ZA" >
+    South Africa
+  </option>
+  <option value="ES" >
+    Spain
+  </option>
+  <option value="LK" >
+    Sri Lanka
+  </option>
+  <option value="SH" >
+    St. Helena
+  </option>
+  <option value="PM" >
+    St. Pierre and Miquelon
+  </option>
+  <option value="VC" >
+    St. Vincent and Grenadines
+  </option>
+  <option value="SD" >
+    Sudan
+  </option>
+  <option value="SR" >
+    Suriname
+  </option>
+  <option value="SJ" >
+    Svalbard/Jan Mayen Isls.
+  </option>
+  <option value="SZ" >
+    Swaziland
+  </option>
+  <option value="SE" >
+    Sweden
+  </option>
+  <option value="CH" >
+    Switzerland
+  </option>
+  <option value="SY" >
+    Syria
+  </option>
+  <option value="TW" >
+    Taiwan
+  </option>
+  <option value="TJ" >
+    Tajikistan
+  </option>
+  <option value="TZ" >
+    Tanzania
+  </option>
+  <option value="TH" >
+    Thailand
+  </option>
+  <option value="TL" >
+    Timor-Leste
+  </option>
+  <option value="TG" >
+    Togo
+  </option>
+  <option value="TK" >
+    Tokelau
+  </option>
+  <option value="TO" >
+    Tonga
+  </option>
+  <option value="TT" >
+    Trinidad and Tobago
+  </option>
+  <option value="TN" >
+    Tunisia
+  </option>
+  <option value="TR" >
+    Turkey
+  </option>
+  <option value="TM" >
+    Turkmenistan
+  </option>
+  <option value="TC" >
+    Turks/Caicos Isls.
+  </option>
+  <option value="TV" >
+    Tuvalu
+  </option>
+  <option value="UG" >
+    Uganda
+  </option>
+  <option value="UA" >
+    Ukraine
+  </option>
+  <option value="AE" >
+    United Arab Emirates
+  </option>
+  <option value="US" >
+    United States
+  </option>
+  <option value="UM" >
+    US Minor Outlying Is.
+  </option>
+  <option value="UY" >
+    Uruguay
+  </option>
+  <option value="UZ" >
+    Uzbekistan
+  </option>
+  <option value="VU" >
+    Vanuatu
+  </option>
+  <option value="VA" >
+    Vatican City
+  </option>
+  <option value="VE" >
+    Venezuela
+  </option>
+  <option value="VN" >
+    Viet Nam
+  </option>
+  <option value="VG" >
+    Virgin Islands (British)
+  </option>
+  <option value="VI" >
+    Virgin Islands (U.S.)
+  </option>
+  <option value="WF" >
+    Wallis/Futuna Isls.
+  </option>
+  <option value="EH" >
+    Western Sahara
+  </option>
+  <option value="YE" >
+    Yemen
+  </option>
+  <option value="ZM" >
+    Zambia
+  </option>
+  <option value="ZW" >
+    Zimbabwe
+  </option>
+            </select>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="formElement8" class="sc-view form-design-field sc-static-layout  sc-regular-size" >
+      <div class="field-wrapper" >
+      </div>
+      <div class="individual field-wrapper" >
+        <div class="_100 field-style" >
+          <p class="field-p" >
+            <input id="field8" type="hidden" name="utm_medium" value=""  />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="formElement9" class="sc-view form-design-field sc-static-layout  sc-regular-size" >
+      <div class="field-wrapper" >
+      </div>
+      <div class="individual field-wrapper" >
+        <div class="_100 field-style" >
+          <p class="field-p" >
+            <input id="field9" type="hidden" name="utm_name" value=""  />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="formElement10" class="sc-view form-design-field sc-static-layout  sc-regular-size" >
+      <div class="field-wrapper" >
+      </div>
+      <div class="individual field-wrapper" >
+        <div class="_100 field-style" >
+          <p class="field-p" >
+            <input id="field10" type="hidden" name="utm_term" value=""  />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="formElement11" class="sc-view form-design-field sc-static-layout  sc-regular-size" >
+      <div class="field-wrapper" >
+      </div>
+      <div class="individual field-wrapper" >
+        <div class="_100 field-style" >
+          <p class="field-p" >
+            <input id="field11" type="hidden" name="utm_content" value=""  />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="formElement12" class="sc-view form-design-field sc-static-layout  sc-regular-size" >
+      <div class="field-wrapper" >
+      </div>
+      <div class="individual field-wrapper" >
+        <div class="_100 field-style" >
+          <p class="field-p" >
+            <input id="field12" type="hidden" name="utm_source" value=""  />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="formElement13" class="sc-view form-design-field sc-static-layout  sc-regular-size" >
+      <div class="field-wrapper" >
+      </div>
+      <div class="individual field-wrapper" >
+        <div class="_100 field-style" >
+          <p class="field-p" >
+            <input id="field13" type="hidden" name="LastSFDCCampaignID" value=""  />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="formElement14" class="sc-view form-design-field sc-static-layout  sc-regular-size" >
+      <div class="field-wrapper" >
+      </div>
+      <div class="individual field-wrapper" >
+        <div class="_100 field-style" >
+          <p class="field-p" >
+            <input id="field14" type="hidden" name="LastSFDCCampaignStatus" value=""  />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="formElement15" class="sc-view form-design-field sc-static-layout  sc-regular-size" >
+      <div class="field-wrapper" >
+      </div>
+      <div class="individual field-wrapper" >
+        <div class="_100 field-style" >
+          <p class="field-p" >
+            <input id="field15" type="hidden" name="LeadSourceMostRecent" value=""  />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="formElement16" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size" >
+      <div class="field-wrapper" >
+      </div>
+      <div class="individual field-wrapper" >
+        <div class="_100 field-style" >
+          <p class="field-p" >
+            <input type="submit" value="Download Now" class="submit-button" style="font-size: 100%; height: 50px; width: 240px"  />
+          </p>
+        </div>
+      </div>
+    </div>
+  </form>
+  <script src="https://img04.en25.com/i/livevalidation_standalone.compressed.js" type="text/javascript" >
+  </script>
+  <style type="text/css" media="screen" >
+    .LV_validation_message{
+      font-weight:bold;
+      margin: 0 0 0 5px;
+    }
+    .LV_valid{
+      color:#00CC00;
+      display:none;
+    }
+    .LV_invalid{
+      color:#CC0000;
+      font-size:10px;
+    }
+    .LV_valid_field, input.LV_valid_field:hover, input.LV_valid_field:active, textarea.LV_valid_field:hover, textarea.LV_valid_field:active {
+      outline: 1px solid #00CC00;
+    }
+    .LV_invalid_field, input.LV_invalid_field:hover, input.LV_invalid_field:active, textarea.LV_invalid_field:hover, textarea.LV_invalid_field:active {
+      outline: 1px solid #CC0000;
+    }
+  </style>
+  <script type="text/javascript" >
+    var dom1 = document.querySelector('#form49 #field1');
+    var field1 = new LiveValidation(dom1, {
+      validMessage: "", onlyOnBlur: false, wait: 300}
+                                   );
+    field1.add(Validate.Presence, {
+      failureMessage:"This field is required"}
+              );
+    field1.add(Validate.Format, {
+      pattern: /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i, failureMessage: "A valid email address is required"}
+              );
+    var dom2 = document.querySelector('#form49 #field2');
+    var field2 = new LiveValidation(dom2, {
+      validMessage: "", onlyOnBlur: false, wait: 300}
+                                   );
+    field2.add(Validate.Presence, {
+      failureMessage:"This field is required"}
+              );
+    var dom3 = document.querySelector('#form49 #field3');
+    var field3 = new LiveValidation(dom3, {
+      validMessage: "", onlyOnBlur: false, wait: 300}
+                                   );
+    field3.add(Validate.Presence, {
+      failureMessage:"This field is required"}
+              );
+    var dom4 = document.querySelector('#form49 #field4');
+    var field4 = new LiveValidation(dom4, {
+      validMessage: "", onlyOnBlur: false, wait: 300}
+                                   );
+    field4.add(Validate.Custom, {
+      against: function(value) {
+        return !value.match(/(telnet|ftp|https?):\/\/(?:[a-z0-9][a-z0-9-]{0,61}[a-z0-9]\.|[a-z0-9]\.)+[a-z]{2,63}/i);
+      }
+      , failureMessage: "Value must not contain any URL's"}
+              );
+    field4.add(Validate.Length, {
+      tooShortMessage:"Invalid length for field value", tooLongMessage: "Invalid length for field value",  minimum: 0, maximum: 35}
+              );
+    field4.add(Validate.Presence, {
+      failureMessage:"This field is required"}
+              );
+    var dom5 = document.querySelector('#form49 #field5');
+    var field5 = new LiveValidation(dom5, {
+      validMessage: "", onlyOnBlur: false, wait: 300}
+                                   );
+    field5.add(Validate.Presence, {
+      failureMessage:"This field is required"}
+              );
+    var dom6 = document.querySelector('#form49 #field6');
+    var field6 = new LiveValidation(dom6, {
+      validMessage: "", onlyOnBlur: false, wait: 300}
+                                   );
+    field6.add(Validate.Presence, {
+      failureMessage:"This field is required"}
+              );
+    var dom7 = document.querySelector('#form49 #field7');
+    var field7 = new LiveValidation(dom7, {
+      validMessage: "", onlyOnBlur: false, wait: 300}
+                                   );
+    field7.add(Validate.Presence, {
+      failureMessage:"This field is required"}
+              );
+    function resetSubmitButton(e){
+      var submitButtons = e.target.form.getElementsByClassName('submit-button');
+      for(var i=0;i<submitButtons.length;i++){
+        submitButtons[i].disabled = false;
+      }
+    }
+    function addChangeHandler(elements){
+      for(var i=0; i<elements.length; i++){
+        elements[i].addEventListener('change', resetSubmitButton);
+      }
+    }
+    var form = document.getElementById('form49');
+    addChangeHandler(form.getElementsByTagName('input'));
+    addChangeHandler(form.getElementsByTagName('select'));
+    addChangeHandler(form.getElementsByTagName('textarea'));
+    var nodes = document.querySelectorAll('#form49 input[data-subscription]');
+    if (nodes) {
+      for (i = 0, len = nodes.length; i < len; i++) {
+        var status = nodes[i].dataset ? nodes[i].dataset.subscription : nodes[i].getAttribute('data-subscription');
+        if(status ==='true') {
+          nodes[i].checked = true;
+        }
+      }
+    };
+    var nodes = document.querySelectorAll('#form49 select[data-value]');
+    if (nodes) {
+      for (var i = 0; i < nodes.length; i++) {
+        var node = nodes[i];
+        var selectedValue = node.dataset ? node.dataset.value : node.getAttribute('data-value');
+        if (selectedValue) {
+          for (var j = 0; j < node.options.length; j++) {
+            if(node.options[j].value === selectedValue) {
+              node.options[j].selected = 'selected';
+              break;
+            }
+          }
+        }
+      }
+    }
+  </script>
+</div>
+</body>
+</html>
