@@ -1,13 +1,26 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-<title>Esther Shin - Portfolio</title>
+<title>Portfolio - Email Code Examples</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" href="http://eshin1010.github.io/images/blue-orange.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://eshin1010.github.io/stylesheets/stylesheet.css">
 <style>
+a {
+	color: #6F9FB6;
+	font-weight: bold;
+}
+a:hover {
+	text-decoration: underline;
+}
+.col p, h4 {
+	text-align: left !important;
+}
+.image-container img {
+	max-width: 700px;
+}
 </style>
 </head>
 
@@ -24,48 +37,75 @@
       <div class="bar border"> <a href=".." class="bar-item button">Home</a> <a href="../portfolio.html" class="bar-item button light-grey">Portfolio</a> <a href="../contact.html" class="bar-item button">Contact</a> </div>
     </div>
     <div style="text-align: center">
-      <h3>Email code examples</h3>
+      <h3>email code examples</h3>
     </div>
   </header>
   
   <!-- Photo Grid -->
   
-  <div class="portfolio" style="max-width: 1000px; margin: 0 auto;">
-  <div>
-      <h4>Thomson Reuters - Event Registration</h4>
-      <p>This event invitation email is based off of a template used for a while that was previously not responsive. I recoded the template so the right side column stacks underneath for mobile. For the numbered list, I used a table rather than ordered list tag since spacing can be more precisely controlled.</p>
-      <p>The email was deployed with Eloqua. There are personalization tags in the greeting for first name and in the footer for recipient email.</p>
-    </div>
+  <div class="portfolio">
     <div class="row reverse">
       <div class="col l8 m8 s12 padding-4">
-        <div class="image-container"> <img class="image" src="https://eshin1010.github.io/images/audi-campaign-reminder.png"> </div>
+        <div class="image-container"> <img class="image" src="https://eshin1010.github.io/images/email-prolaw-vantage.png"> </div>
       </div>
-      <div class="col l4 m4 s12 padding-16" style="text-align: left">
-        <h4>automotiveMastermind B2C Audi Campaign</h4>
-        <p>automotiveMastermind requested B2C emails for their client brands, with personalization for individual dealerships. This is an email from an Audi campaign.</p>
-        <p>This follow-up email includes personalization tags based on the contact information of the particular Audi dealership.</p>
+      <div class="col l4 m4 s12 padding-16">
+        <h4>Thomson Reuters - event invitation</h4>
+      <p><a href="https://eshin1010.github.io/portfolio/prolaw-vantage-2018.html" download>Download HTML file</a></p>
+      <p>This event invitation email is based off a template used for a while that was previously not responsive. I recoded the template so the right side column stacks underneath for mobile. For the numbered list, I used a table rather than ordered list tag since spacing can be more precisely controlled. Open Sans font falls back to Arial for email clients that don't display web fonts.</p>
+      <p>The email was deployed with Eloqua. There are personalization tags in the greeting for first name and in the footer for recipient email.</p>
       </div>
     </div>
     <!--/row-->
     <div class="row">
       <div class="col l4 m4 s12 padding-16">
-        <h4>reporting & insights blog</h4>
-        <p>Created blog page and updated with regular posts written by the marketing automation managers.</p>
+        <h4>automotiveMastermind follow-up email - B2C</h4>
+      <p><a href="https:/eshin1010.github.io/portfolio/audi-campaign-reminder.html" download>Download HTML file</a></p>
+      <p>automotiveMastermind requested emails templates for their client brands, with personalization tags for an individual dealership's name and contact information. The emails are deployed with local dealership information, sent to their customers.</p>
+      <p>The side-by-side boxes at the bottom stack for mobile. The left side "Questions" box includes text coded over an image with a fallback dark gray background.</p>
       </div>
       <div class="col l8 m8 s12 padding-4">
-        <div class="image-container"> <img class="image" src="https://eshin1010.github.io/images/LP-tr-insights.png"> </div>
+        <div class="image-container"> <img class="image" src="https://eshin1010.github.io/images/audi-campaign-reminder.png"> </div>
       </div>
     </div>
     <!--/row-->
-    
+    <div class="row reverse">
+      <div class="col l8 m8 s12 padding-4">
+        <div class="image-container"> <img class="image" src="https://eshin1010.github.io/images/email-aM-results.png"> </div>
+      </div>
+      <div class="col l4 m4 s12 padding-16">
+        <h4>automotiveMastermind B2B</h4>
+        <p><a href="https://eshin1010.github.io/portfolio/am-results-opt-in.html" download>Download HTML file</a></p>
+        <p>This email includes image blocks that are three across for fullsize in browsers and two across for mobile. Montserrat falls back to Arial.</p>
+        <p>The email was deployed in Pardot, with personalization tag in the greeting.</p>
+      </div>
+    </div>
+    <!--/row-->
   </div>
   <!--/portfolio--> 
-  
-  <!-- End Page Content --> 
+
+<!-- End Page Content -->
 </div>
 
 <!-- Footer -->
 <footer class="container padding-64 light-grey center large"> </footer>
-<script src="https://eshin1010.github.io/javascripts/main.js"></script>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
 </body>
 </html>
