@@ -1,0 +1,38 @@
+﻿%recipient.DealerName%
+
+To contact us reply to %recipient.FromEmail% only or call %recipient.FromPhone%. Please do not use the reply to button. Emails will not be monitored in that account.
+
+============================================================
+
+
+THERE'S NO REASON TO WAIT
+
+Don't forget, our special programs are only available until April 30th. If you like what you see, save your offer to get the best price on your new Audi.
+
+
+**VIEW MY OFFER: %recipient.LandingPageUrl%
+
+
+Not the right vehicle for you? Don’t worry, you can tailor this opportunity to fit your exact needs or view other offers available to you this month.
+
+Should you have any questions, please contact us directly at %recipient.FromPhone% or email us at %recipient.FromEmail%.
+
+Questions? Call, email or stop in to discuss in person.
+
+
+Best regards,
+
+%recipient.FromName%
+%recipient.FromTitle%
+%recipient.DealerName%
+%recipient.FromPhone% 
+%recipient.FromEmail%
+
+
+============================================================
+
+© 2018 %recipient.DealerName%. All Rights Reserved, %recipient.DealerName%, %recipient.DealerStreetAddress%, %recipient.DealerCity%, %recipient.DealerState% %recipient.DealerZip%
+
+Unsubscribe me from this list: %recipient.UnsubscribeConquestUrl%
+
+[Legal copy]
