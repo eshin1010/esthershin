@@ -1,0 +1,623 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+
+<link rel="icon" href="https://d36cmr08aasnby.cloudfront.net/assets/store/favicon.ico">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="x-apple-disable-message-reformatting">
+<title>Raise</title>
+
+<!-- Web Font / @font-face : BEGIN -->
+
+<!-- Outlook fallback font -->
+<!--[if mso]>
+        <style>
+            * {
+                font-family: Arial, sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+<!--[if !mso]><!-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<!--<![endif]-->
+
+<!-- Web Font / @font-face : END -->
+
+<!-- CSS Reset -->
+<style>
+html, body {
+  margin: 0 auto !important;
+  padding: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+/* Stops email clients resizing small text. */
+* {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+/* Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+  margin: 0 !important;
+}
+/* Stops Outlook from adding extra spacing to tables. */
+table, td {
+  mso-table-lspace: 0pt !important;
+  mso-table-rspace: 0pt !important;
+}
+/* Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+  border-spacing: 0 !important;
+  border-collapse: collapse !important;
+  table-layout: fixed !important;
+  margin: 0 auto !important;
+}
+table table table {
+  table-layout: auto;
+}
+/* Uses a better rendering method when resizing images in IE. */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+/* A work-around for email clients meddling in triggered links. */
+*[x-apple-data-detectors],  /* iOS */ .x-gmail-data-detectors,    /* Gmail */ .x-gmail-data-detectors *, .aBn {
+  border-bottom: 0 !important;
+  cursor: default !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+/* Prevents Gmail from displaying an download button on large, non-linked images. */
+.a6S {
+  display: none !important;
+  opacity: 0.01 !important;
+}
+/* If the above doesn't work, add a .g-img class to any image in question. */
+img.g-img + div {
+  display: none !important;
+}
+/* Prevents underlining the button text in Windows 10 */
+.button-link {
+  text-decoration: none !important;
+}
+
+@media screen and (max-width: 600px) {
+/* Forces elements to resize to the full width of their container. */
+.fluid {
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+}
+
+/* Removes right gutter in Gmail iOS app */
+@media only screen and (min-device-width: 375px) and (max-device-width: 413px) { /* iPhone 6 and 6+ */
+.email-container {
+  min-width: 375px !important;
+}
+}
+
+@media screen and (max-width: 550px) {
+.card {
+  width: 100% !important;
+  max-width: 153px !important;
+  height: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+}
+
+@media screen and (max-width: 480px) {
+.full {
+  width: 100% !important;
+}
+.preheader {
+  padding: 2px 10px !important;
+  font-size: 10px !important;
+  line-height: 14px !important;
+}
+/* Forces table cells into full-width rows. */
+.stack-column, .stack-column-center {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  direction: ltr !important;
+}
+/* And center justify these ones. */
+.stack-column-center {
+  text-align: center !important;
+}
+/* Generic utility class for centering. Useful for images, buttons, and nested tables. */
+.center-on-narrow {
+  text-align: center !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: none !important;
+}
+table.center-on-narrow {
+  display: inline-block !important;
+}
+/* Adjust typography on small screens to improve readability */
+.email-container p {
+  font-size: 17px !important;
+  line-height: 22px !important;
+}
+.no-mobile {
+  display: none !important;
+  text-indent: -9999em !important;
+}
+.no-mobile img {
+  width: 0px !important;
+  height: 0px !important;
+}
+.hidedesk {
+  max-height: none !important;
+  font-size: 15px !important;
+  display: block !important;
+}
+.mobile-td {
+  max-height: none !important;
+  font-size: 15px !important;
+  display: table-cell !important;
+}
+img.hide {
+  max-height: none !important;
+  font-size: 14px !important;
+  display: block !important;
+  width: 100% !important;
+  border: none !important;
+}
+.subheadline {
+  font-size: 18px !important;
+  padding: 20px 20px 0 !important;
+}
+.grid-bg {
+  background-image: url('https://media.sailthru.com/5pd/1k2/b/e/5beca9675e767.jpg') !important;
+}
+.brand-row {
+  width: 94% !important;
+}
+.arrow {
+  width: 12px !important;
+}
+.space {
+  width: 3% !important;
+}
+.brand-logo {
+  width: 90% !important;
+}
+.font13px {
+  font-size: 3vw !important;
+  line-height: 1.3 !important;
+}
+.social {
+  max-width: 40px !important;
+  width: 80% !important;
+}
+.disc-padding {
+  padding: 5px 30px 20px !important;
+}
+/* mobile two across row */
+.width50percent {
+  width: 50% !important;
+}
+.brand-td {
+  max-height: none !important;
+  display: table-cell !important;
+  padding: 5px 0;
+}
+.percent-off {
+  font-family: 'roboto', sans-serif;
+  font-size: 3vw !important;
+  line-height: 1.3 !important;
+  color: #c2c7cb;
+  text-decoration:none;
+  font-weight: 500;
+}
+}
+</style>
+
+<!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+</head><body width="100%" bgcolor="#EBEAEA" style="margin: 0; mso-line-height-rule: exactly;">
+<center style="width: 100%; background: #EBEAEA; text-align: left;">
+  
+  <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;">Today only! Extra 5% off apparel. Ho, ho, ho—It’s Raise Daily Deal Week! Today only, enjoy sparkling savings on select apparel and accessory brands.</div>
+  
+  <div style="max-width: 600px; margin: auto;" class="email-container"> 
+    <!--[if mso]>
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+            <tr>
+            <td>
+            <![endif]--> 
+    
+    <!-- Email Body : BEGIN -->
+    
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" bgcolor="#ffffff" style="max-width: 600px;" class="email-container">
+      <tr>
+        <td style="font-family: Helvetica, Arial, sans-serif; color:#5a686c; font-size: 11px; line-height: 16px; font-weight: 300; padding: 5px 10px 0; text-decoration: none;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Bf11f30bb"><img src="http://link.raise.com/img/5af1e9db7e553f660e452ab15c155091071eff25d2745b1c/2bf141a4.gif" alt="" border="0" /></a>Today only! Extra 5% off apparel.&nbsp; <a href="http://link.raise.com/view/5af1e9db7e553f660e452ab15c155091071eff25d2745b1c/eee80ad8" style="color:#5a686c; text-decoration: underline;" target="_blank">View in browser</a></td>
+      </tr>
+      <tr>
+        <td><table cellpadding="0" cellspacing="0" width="100%">
+            <tr valign="middle">
+              <td width="11%" style="text-align: center; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: bold; padding: 4px 0 0;" class="font12px"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly93d3cucmFpc2UuY29tL2J1eS1naWZ0LWNhcmRzP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1B5489a1c6" target="_blank" style="color: #4ed1aa; text-decoration: none;">BUY</a></td>
+              <td width="3%" style="font-size: 15px; text-align: center; color: #4ed1aa; font-weight: bold; padding: 4px 0 0;" class="font13px">|</td>
+              <td width="11%" style="text-align: center; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: bold; padding: 4px 0 0;" class="font12px"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly93d3cucmFpc2UuY29tL3NlbGwtZ2lmdC1jYXJkcz91dG1fc291cmNlPUVuZ2FnZW1lbnQmdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249MjAxODEyMTVfTmV3c2xldHRlcl9BdWRpZW5jZSZtZXNzYWdlX2lkPTVjMTU1MDkxMDcxZWZmMjVkMjc0NWIxYw/5af1e9db7e553f660e452ab1B34dfd730" target="_blank" style="color: #4ed1aa; text-decoration: none;">SELL</a></td>
+              <td width="75%"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly93d3cucmFpc2UuY29tL3Nob3AvZGFpbHktZGVhbC13ZWVrLWFwcGFyZWw_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Bc3a1a53c" target="_blank" class="no-mobile"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c099cd8ad438.jpg" width="450" style="display: block; border: none;" class="no-mobile fluid"></a><!--[if !mso]><!--><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly93d3cucmFpc2UuY29tL3Nob3AvZGFpbHktZGVhbC13ZWVrLWFwcGFyZWw_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Cc3a1a53c" target="_blank" style="color: #3f484d;"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c099cdfd5865.jpg" style="max-height: 0px; font-size: 0; display: none;" class="hide"></a><!--<![endif]--></td>
+            </tr>
+          </table></td>
+      </tr>
+      <!-- HERO : BEGIN -->
+      <tr>
+        <td><table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <!--Desktop-->
+            <tr>
+              <td class="no-mobile"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly93d3cucmFpc2UuY29tL3Nob3AvZGFpbHktZGVhbC13ZWVrLWFwcGFyZWw_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Dc3a1a53c" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c099e0927528.jpg" width="600" alt="Daily Deal Week. EXTRA 5% OFF APPAREL & ACCESSORIES. Ho, ho, ho—It’s Raise Daily Deal Week! 
+Today only, enjoy sparkling savings on select apparel and accessory brands. Use Code: SPARKLE. [Shop Now] Maximum savings $10. One use per household. Not valid on Raise Pay orders. Offer expires 12/10/18 11:59 PM CST." style="display:block; border:none;" class="fluid"></a></td>
+            </tr>
+            <!--Mobile-->
+            <tr>
+              <td align="center" class="hidedesk" style="max-height: 0px; font-size: 0; display: none;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly93d3cucmFpc2UuY29tL3Nob3AvZGFpbHktZGVhbC13ZWVrLWFwcGFyZWw_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Ec3a1a53c" target="_blank"><img style="max-height: 0px; font-size: 0; display: none;" class="hide" src="https://media.sailthru.com/5pd/1k2/c/6/5c09a222db15b.jpg"></a></td>
+            </tr>
+          </table></td>
+      </tr>
+      <!-- HERO : END --> 
+       
+       
+      <!-- BRAND GRID : BEGIN-->
+      <tr>
+        <td><table align="center" cellpadding="0" cellspacing="0" width="90%" class="brand-row">
+            <tr valign="top">
+              <td width="33%" style="padding: 5px 0;" class="width50percent"><table cellpadding="0" cellspacing="0" width="95%">
+                  <tr>
+                    <td align="center"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWZhbmF0aWNzLWdpZnQtY2FyZHM_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1B0e0e3ff0" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c09aae4c2940.jpg" width="170" alt="Fanatics" style="display: block; border: none; max-width: 170px;" class="fluid"></a></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="font-family: 'roboto', sans-serif; font-size: 12px; line-height: 1.4;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWZhbmF0aWNzLWdpZnQtY2FyZHM_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1C0e0e3ff0" style="color:#c2c7cb; text-decoration:none; font-weight: 500;" target="_blank" class="font13px"><span style="text-decoration: line-through;">UP TO 12.0% OFF</span><br>
+                      <strong style="color: #233462;">UP TO 16.4% OFF</strong> </a></td>
+                  </tr>
+                </table></td>
+              <td width="33%" style="padding: 5px 0;" class="width50percent"><table cellpadding="0" cellspacing="0" width="95%">
+                  <tr>
+                    <td align="center"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LW1hY3ktcy1naWZ0LWNhcmRzP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1B0b8c0cc5" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c09aaf0dc430.jpg" width="170" alt="Macy's" style="display: block; border: none; max-width: 170px;" class="fluid"></a></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="font-family: 'roboto', sans-serif; font-size: 12px; line-height: 1.4;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LW1hY3ktcy1naWZ0LWNhcmRzP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1C0b8c0cc5" style="color:#c2c7cb; text-decoration:none; font-weight: 500;" target="_blank" class="font13px"><span style="text-decoration: line-through;">UP TO 3.0% OFF</span><br>
+                      <strong style="color: #233462;">UP TO 7.9% OFF</strong> </a></td>
+                  </tr>
+                </table></td>
+              <td width="33%" style="padding: 5px 0;" class="no-mobile"><table cellpadding="0" cellspacing="0" width="95%">
+                  <tr>
+                    <td align="center"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LXQtai1tYXh4LWdpZnQtY2FyZHM_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Bb73e303a" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c09aafa70fdb.jpg" width="170" alt="T.J. Maxx" style="display: block; border: none; max-width: 170px;" class="fluid"></a></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="font-family: 'roboto', sans-serif; font-size: 12px; line-height: 1.4;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LXQtai1tYXh4LWdpZnQtY2FyZHM_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Cb73e303a" style="color:#c2c7cb; text-decoration:none; font-weight: 500;" target="_blank" class="font13px"><span style="text-decoration: line-through;">UP TO 5.1% OFF</span><br>
+                      <strong style="color: #233462;">UP TO 9.8% OFF</strong> </a></td>
+                  </tr>
+                </table></td>
+            </tr>
+          </table></td>
+      </tr>
+      <!--[if !mso]><!-->
+      <tr>
+        <td><table align="center" cellpadding="0" cellspacing="0" width="90%" class="brand-row">
+            <tr valign="top">
+              <td class="brand-td width50percent"><table cellpadding="0" cellspacing="0" width="95%">
+                  <tr>
+                    <td align="center" class="hidedesk" style="max-height: 0px; font-size: 0; display: none;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LXQtai1tYXh4LWdpZnQtY2FyZHM_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Db73e303a" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c09aafa70fdb.jpg" width="170" alt="T.J. Maxx" style="display: none; border: none; max-width: 170px;" class="hide"></a></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="max-height: 0px; font-size: 0; display: none;" class="brand-td percent-off"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LXQtai1tYXh4LWdpZnQtY2FyZHM_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Eb73e303a" target="_blank" class="percent-off"><span style="text-decoration: line-through;">UP TO 5.1% OFF</span><br>
+                      <strong style="color: #233462;">UP TO 9.8% OFF</strong> </a></td>
+                  </tr>
+                </table></td>
+              <td class="brand-td width50percent"><table cellpadding="0" cellspacing="0" width="95%">
+                  <tr>
+                    <td align="center" class="hidedesk" style="max-height: 0px; font-size: 0; display: none;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWtvaGwtcy1naWZ0LWNhcmRzP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1Bf074a8a2" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c09ab035499a.jpg" width="170" alt="Kohl's" style="display: none; border: none; max-width: 170px;" class="hide"></a></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="max-height: 0px; font-size: 0; display: none;" class="brand-td percent-off"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWtvaGwtcy1naWZ0LWNhcmRzP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1Cf074a8a2" target="_blank" class="percent-off"><span style="text-decoration: line-through;">UP TO 3.0% OFF</span><br>
+                      <strong style="color: #233462;">UP TO 7.9% OFF</strong> </a></td>
+                  </tr>
+                </table></td>
+            </tr>
+          </table></td>
+      </tr>
+      <!--<![endif]-->
+      <tr>
+        <td><table align="center" cellpadding="0" cellspacing="0" width="90%" class="brand-row">
+            <tr valign="top">
+              <td width="33%" style="padding: 5px 0;" class="no-mobile"><table cellpadding="0" cellspacing="0" width="95%">
+                  <tr>
+                    <td align="center"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWtvaGwtcy1naWZ0LWNhcmRzP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1Df074a8a2" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c09ab035499a.jpg" width="170" alt="Kohl's" style="display: block; border: none; max-width: 170px;" class="fluid"></a></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="font-family: 'roboto', sans-serif; font-size: 12px; line-height: 1.4;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWtvaGwtcy1naWZ0LWNhcmRzP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1Ef074a8a2" style="color:#c2c7cb; text-decoration:none; font-weight: 500;" target="_blank" class="font13px"><span style="text-decoration: line-through;">UP TO 3.0% OFF</span><br>
+                      <strong style="color: #233462;">UP TO 7.9% OFF</strong> </a></td>
+                  </tr>
+                </table></td>
+              <td width="33%" style="padding: 5px 0;" class="width50percent"><table cellpadding="0" cellspacing="0" width="95%">
+                  <tr>
+                    <td align="center"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWgtbS1naWZ0LWNhcmRzP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1Bfd43db45" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c09ab0bca3c5.jpg" width="170" alt="H&M" style="display: block; border: none; max-width: 170px;" class="fluid"></a></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="font-family: 'roboto', sans-serif; font-size: 12px; line-height: 1.4;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWgtbS1naWZ0LWNhcmRzP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1Cfd43db45" style="color:#c2c7cb; text-decoration:none; font-weight: 500;" target="_blank" class="font13px"><span style="text-decoration: line-through;">UP TO 31.5% OFF</span><br>
+                      <strong style="color: #233462;">UP TO 34.9% OFF</strong> </a></td>
+                  </tr>
+                </table></td>
+              <td width="33%" style="padding: 5px 0;" class="width50percent"><table cellpadding="0" cellspacing="0" width="95%">
+                  <tr>
+                    <td align="center"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LXZpY3RvcmlhLXMtc2VjcmV0LWdpZnQtY2FyZHM_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Bd7fa7231" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c09ab15227e8.jpg" width="170" alt="Victoria's Secret" style="display: block; border: none; max-width: 170px;" class="fluid"></a></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="font-family: 'roboto', sans-serif; font-size: 12px; line-height: 1.4;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LXZpY3RvcmlhLXMtc2VjcmV0LWdpZnQtY2FyZHM_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Cd7fa7231" style="color:#c2c7cb; text-decoration:none; font-weight: 500;" target="_blank" class="font13px"><span style="text-decoration: line-through;">UP TO 7.6% OFF</span><br>
+                      <strong style="color: #233462;">UP TO 12.2% OFF</strong> </a></td>
+                  </tr>
+                </table></td>
+            </tr>
+          </table></td>
+      </tr>
+      <tr>
+        <td><table align="center" cellpadding="0" cellspacing="0" width="90%" class="brand-row">
+            <tr valign="top">
+              <td width="33%" style="padding: 5px 0;" class="width50percent"><table cellpadding="0" cellspacing="0" width="95%">
+                  <tr>
+                    <td align="center"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWFkaWRhcy1naWZ0LWNhcmRzP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1Bdb2d87c7" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c09abcaa2818.jpg" width="170" alt="adidas" style="display: block; border: none; max-width: 170px;" class="fluid"></a></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="font-family: 'roboto', sans-serif; font-size: 12px; line-height: 1.4;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWFkaWRhcy1naWZ0LWNhcmRzP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1Cdb2d87c7" style="color:#c2c7cb; text-decoration:none; font-weight: 500;" target="_blank" class="font13px"><span style="text-decoration: line-through;">UP TO 7.1% OFF</span><br>
+                      <strong style="color: #233462;">UP TO 11.7% OFF</strong> </a></td>
+                  </tr>
+                </table></td>
+              <td width="33%" style="padding: 5px 0;" class="width50percent"><table cellpadding="0" cellspacing="0" width="95%">
+                  <tr>
+                    <td align="center"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWRpY2stcy1zcG9ydGluZy1nb29kcy1naWZ0LWNhcmRzP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1Bbe54149f" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c09abd75c39e.jpg" width="170" alt="Dick's Sporting Goods" style="display: block; border: none; max-width: 170px;" class="fluid"></a></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="font-family: 'roboto', sans-serif; font-size: 12px; line-height: 1.4;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWRpY2stcy1zcG9ydGluZy1nb29kcy1naWZ0LWNhcmRzP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1Cbe54149f" style="color:#c2c7cb; text-decoration:none; font-weight: 500;" target="_blank" class="font13px"><span style="text-decoration: line-through;">UP TO 0.5% OFF</span><br>
+                      <strong style="color: #233462;">UP TO 5.5% OFF</strong> </a></td>
+                  </tr>
+                </table></td>
+              <td width="33%" style="padding: 5px 0;" class="no-mobile"><table cellpadding="0" cellspacing="0" width="95%">
+                  <tr>
+                    <td align="center"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWpjcGVubmV5LWdpZnQtY2FyZHM_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Bbeb3a7cf" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c09ac73c394a.jpg" width="170" alt="JCPenney" style="display: block; border: none; max-width: 170px;" class="fluid"></a></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="font-family: 'roboto', sans-serif; font-size: 12px; line-height: 1.4;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWpjcGVubmV5LWdpZnQtY2FyZHM_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Cbeb3a7cf" style="color:#c2c7cb; text-decoration:none; font-weight: 500;" target="_blank" class="font13px"><span style="text-decoration: line-through;">UP TO 7.9% OFF</span><br>
+                      <strong style="color: #233462;">UP TO 12.5% OFF</strong> </a></td>
+                  </tr>
+                </table></td>
+            </tr>
+          </table></td>
+      </tr>
+      <!--[if !mso]><!-->
+      <tr>
+        <td><table align="center" cellpadding="0" cellspacing="0" width="90%" class="brand-row">
+            <tr valign="top">
+              <td class="brand-td width50percent"><table cellpadding="0" cellspacing="0" width="95%">
+                  <tr>
+                    <td align="center" class="hidedesk" style="max-height: 0px; font-size: 0; display: none;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWpjcGVubmV5LWdpZnQtY2FyZHM_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Dbeb3a7cf" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c09ac73c394a.jpg" width="170" alt="JCPenney" style="display: none; border: none; max-width: 170px;" class="hide"></a></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="max-height: 0px; font-size: 0; display: none;" class="brand-td percent-off"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWpjcGVubmV5LWdpZnQtY2FyZHM_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Ebeb3a7cf" target="_blank" class="percent-off"><span style="text-decoration: line-through;">UP TO 7.9% OFF</span><br>
+                      <strong style="color: #233462;">UP TO 12.5% OFF</strong> </a></td>
+                  </tr>
+                </table></td>
+              <td class="brand-td width50percent"><table cellpadding="0" cellspacing="0" width="95%">
+                  <tr>
+                    <td align="center" class="hidedesk" style="max-height: 0px; font-size: 0; display: none;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWdhcC1naWZ0LWNhcmRzP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1B737061a5" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c09ac91b0efe.jpg" width="170" alt="Gap" style="display: none; border: none; max-width: 170px;" class="hide"></a></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="max-height: 0px; font-size: 0; display: none;" class="brand-td percent-off"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWdhcC1naWZ0LWNhcmRzP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1C737061a5" target="_blank" class="percent-off"><span style="text-decoration: line-through;">UP TO 7.5% OFF</span><br>
+                      <strong style="color: #233462;">UP TO 12.1% OFF</strong> </a></td>
+                  </tr>
+                </table></td>
+            </tr>
+          </table></td>
+      </tr>
+      <!--<![endif]-->
+      <tr>
+        <td><table align="center" cellpadding="0" cellspacing="0" width="90%" class="brand-row">
+            <tr valign="top">
+              <td width="33%" style="padding: 5px 0;" class="no-mobile"><table cellpadding="0" cellspacing="0" width="95%">
+                  <tr>
+                    <td align="center"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWdhcC1naWZ0LWNhcmRzP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1D737061a5" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c09ac91b0efe.jpg" width="170" alt="Gap" style="display: block; border: none; max-width: 170px;" class="fluid"></a></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="font-family: 'roboto', sans-serif; font-size: 12px; line-height: 1.4;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWdhcC1naWZ0LWNhcmRzP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1E737061a5" style="color:#c2c7cb; text-decoration:none; font-weight: 500;" target="_blank" class="font13px"><span style="text-decoration: line-through;">UP TO 7.5% OFF</span><br>
+                      <strong style="color: #233462;">UP TO 12.1% OFF</strong> </a></td>
+                  </tr>
+                </table></td>
+              <td width="33%" style="padding: 5px 0;" class="width50percent"><table cellpadding="0" cellspacing="0" width="95%">
+                  <tr>
+                    <td align="center"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWNhcnRlci1zLWdpZnQtY2FyZHM_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1B942bf03e" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c09ac9a21055.jpg" width="170" alt="Carter's" style="display: block; border: none; max-width: 170px;" class="fluid"></a></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="font-family: 'roboto', sans-serif; font-size: 12px; line-height: 1.4;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWNhcnRlci1zLWdpZnQtY2FyZHM_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1C942bf03e" style="color:#c2c7cb; text-decoration:none; font-weight: 500;" target="_blank" class="font13px"><span style="text-decoration: line-through;">UP TO 6.0% OFF</span><br>
+                      <strong style="color: #233462;">UP TO 10.7% OFF</strong> </a></td>
+                  </tr>
+                </table></td>
+              <td width="33%" style="padding: 5px 0;" class="width50percent"><table cellpadding="0" cellspacing="0" width="95%">
+                  <tr>
+                    <td align="center"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWFiZXJjcm9tYmllLWZpdGNoLWdpZnQtY2FyZHM_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Be2ceed1d" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c09aca256730.jpg" width="170" alt="Abercrombie & Fitch" style="display: block; border: none; max-width: 170px;" class="fluid"></a></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="font-family: 'roboto', sans-serif; font-size: 12px; line-height: 1.4;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cDovL3d3dy5yYWlzZS5jb20vYnV5LWFiZXJjcm9tYmllLWZpdGNoLWdpZnQtY2FyZHM_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Ce2ceed1d" style="color:#c2c7cb; text-decoration:none; font-weight: 500;" target="_blank" class="font13px"><span style="text-decoration: line-through;">UP TO 7.2% OFF</span><br>
+                      <strong style="color: #233462;">UP TO 11.8% OFF</strong> </a></td>
+                  </tr>
+                </table></td>
+            </tr>
+          </table></td>
+      </tr>
+      <!-- BRAND GRID : END --> 
+      
+       
+      <!--Desktop-->
+      <tr>
+        <td class="no-mobile" bgcolor="#f6f8f7"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly93d3cucmFpc2UuY29tL3Nob3AvZGFpbHktZGVhbC13ZWVrLWFwcGFyZWw_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Fc3a1a53c" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/b/k/5bf470fae1095.jpg" width="600" alt="VIEW ALL BRANDS" style="display:block; border:none;" class="fluid"></a></td>
+      </tr>
+      <!--Mobile-->
+      <tr>
+        <td align="center" class="hidedesk" style="max-height: 0px; font-size: 0; display: none;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly93d3cucmFpc2UuY29tL3Nob3AvZGFpbHktZGVhbC13ZWVrLWFwcGFyZWw_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Gc3a1a53c" target="_blank"><img style="max-height: 0px; font-size: 0; display: none;" class="hide" src="https://media.sailthru.com/5pd/1k2/b/k/5bf4507253ef7.jpg" alt="VIEW ALL BRANDS"></a></td>
+      </tr>
+       
+       
+      <!--Desktop-->
+      <tr>
+        <td class="no-mobile"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly93d3cucmFpc2UuY29tL3Nob3AvZGFpbHktZGVhbC13ZWVrLWFwcGFyZWw_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Hc3a1a53c" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/c/6/5c09a247e8f24.gif" width="600" alt="Wish List, Granted. Make sure to check Raise every day this week for extra savings on your favorite holiday brands. [Shop Today’s Deal]" style="display:block; border:none;" class="fluid"></a></td>
+      </tr>
+      <!--Mobile-->
+      <tr>
+        <td align="center" class="hidedesk" style="max-height: 0px; font-size: 0; display: none;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly93d3cucmFpc2UuY29tL3Nob3AvZGFpbHktZGVhbC13ZWVrLWFwcGFyZWw_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1Ic3a1a53c" target="_blank"><img style="max-height: 0px; font-size: 0; display: none;" class="hide" src="https://media.sailthru.com/5pd/1k2/c/6/5c09a2508a3cc.gif" alt="Wish List, Granted. Make sure to check Raise every day this week for extra savings on your favorite holiday brands. [Shop Today’s Deal]"></a></td>
+      </tr>
+       
+      
+       
+      <!-- FOOTER : BEGIN -->
+      <tr>
+        <td>
+<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+  <tr>
+    <td background="https://media.sailthru.com/5pd/1k2/b/2/5bdcc2fe8b28f.jpg" bgcolor="#3F484D" align="center" valign="top" style="text-align: center; background-position: center top !important; background-size: cover !important;"><!--[if gte mso 9]>
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px; height:150px; background-position: center center !important;">
+                        <v:fill type="tile" src="https://media.sailthru.com/5pd/1k2/b/2/5bdcc2fe8b28f.jpg" color="#3F484D" />
+                        <v:textbox inset="0,0,0,0">
+                        <![endif]-->
+      
+      <div> 
+        <!--[if mso]>
+                            <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="600">
+                            <tr>
+                            <td align="center" valign="middle" width="600">
+                            <![endif]-->
+        <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+          <tr>
+            <td style="padding: 30px 0;"><table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+                <tr>
+                  <td align="center" style="font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-size: 13px; line-height:20px; font-weight: bold; color:#ffffff; text-align:center; letter-spacing: 0.16em; padding: 0 5px 20px 8px;" class="font13px">FOLLOW US AND BE MERRY</td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 15px;"><table cellpadding="0" cellspacing="0" border="0" width="70%" align="center" class="brand-row">
+                      <tr>
+                        <td width="20%" align="center" style="padding: 0 5px;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL1JhaXNlTWFya2V0cGxhY2UvP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1Bee125c7a" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/6/k/5b2afef33743e.png" width="48" alt="Facebook" style="display:block; border:none;" class="social"></a></td>
+                        <td width="20%" align="center" style="padding: 0 5px;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly90d2l0dGVyLmNvbS9yYWlzZW1hcmtldD91dG1fc291cmNlPUVuZ2FnZW1lbnQmdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249MjAxODEyMTVfTmV3c2xldHRlcl9BdWRpZW5jZSZtZXNzYWdlX2lkPTVjMTU1MDkxMDcxZWZmMjVkMjc0NWIxYw/5af1e9db7e553f660e452ab1B6e1848f9" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/6/k/5b2aff0e18e9c.png" width="48" alt="Twitter" style="display:block; border:none;" class="social"></a></td>
+                        <td width="20%" align="center" style="padding: 0 5px;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9yYWlzZS8_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1B0ba414ac" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/6/k/5b2aff2875c0f.png" width="48" alt="Instagram" style="display:block; border:none;" class="social"></a></td>
+                        <td width="20%" align="center" style="padding: 0 5px;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly93d3cucGludGVyZXN0LmNvbS9yYWlzZS8_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1B14c91e06" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/6/k/5b2aff4ad3488.png" width="48" alt="Pinterest" style="display:block; border:none;" class="social"></a></td>
+                        <td width="20%" align="center" style="padding: 0 5px;"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly9ibG9nLnJhaXNlLmNvbS8_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1B497c303a" target="_blank"><img src="https://media.sailthru.com/5pd/1k2/8/a/5b6db70369268.png" width="48" alt="blog" style="display:block; border:none;" class="social"></a></td>
+                      </tr>
+                    </table></td>
+                </tr>
+              </table></td>
+          </tr>
+        </table>
+        <!--[if mso]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]--> 
+      </div>
+      
+      <!--[if gte mso 9]>
+                        </v:textbox>
+                        </v:rect>
+                        <![endif]--></td>
+  </tr>
+</table>
+
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td bgcolor="#F6F7F7" style="padding: 20px 0;"><table cellpadding="0" cellspacing="0" border="0" width="90%" align="center">
+        <tr>
+          <td bgcolor="#F6F7F7"><table cellpadding="0" cellspacing="0" border="0" width="100%">
+              <tr valign="top">
+                <td width="25%" class="font-10" align="center" style="font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-size: 12px; line-height:16px; font-weight: bold; color:#376B5C; text-align:center; padding: 2px 0"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly93d3cucmFpc2UuY29tL2hvdy1pdC13b3Jrcz91dG1fc291cmNlPUVuZ2FnZW1lbnQmdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249MjAxODEyMTVfTmV3c2xldHRlcl9BdWRpZW5jZSZtZXNzYWdlX2lkPTVjMTU1MDkxMDcxZWZmMjVkMjc0NWIxYw/5af1e9db7e553f660e452ab1B771f9a4d" target="_blank" style="color:#788A91; text-decoration:none;">HOW IT WORKS</a></td>
+                <td width="52%" class="font-10" align="center" style="font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-size: 12px; line-height:16px; font-weight: bold; color:#376B5C; text-align:center; padding: 2px 0"><a target="_blank" style="color:#788A91; text-decoration:none;" href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly93d3cucmFpc2UuY29tL2d1YXJhbnRlZT91dG1fc291cmNlPUVuZ2FnZW1lbnQmdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249MjAxODEyMTVfTmV3c2xldHRlcl9BdWRpZW5jZSZtZXNzYWdlX2lkPTVjMTU1MDkxMDcxZWZmMjVkMjc0NWIxYw/5af1e9db7e553f660e452ab1B023d2f81">1 YEAR MONEY-BACK&nbsp;GUARANTEE</a></td>
+                <td width="23%" class="font-10" align="center" style="font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-size: 12px; line-height:16px; font-weight: bold; color:#376B5C; text-align:center; padding: 2px 0"><a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly9oZWxwLnJhaXNlLmNvbT91dG1fc291cmNlPUVuZ2FnZW1lbnQmdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249MjAxODEyMTVfTmV3c2xldHRlcl9BdWRpZW5jZSZtZXNzYWdlX2lkPTVjMTU1MDkxMDcxZWZmMjVkMjc0NWIxYw/5af1e9db7e553f660e452ab1B4e424d3c" target="_blank" style="color:#788A91; text-decoration:none;">HELP CENTER</a></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+          <!-- Footer Disclaimers Container -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td bgcolor="#ffffff" style="background-color: #ffffff; padding: 30px 0 20px 0;"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+          <td align="center" style="font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 11px; color:#788A91;"><strong>OFFER DETAILS</strong></td>
+        </tr>
+        <tr valign="top">
+          <td align="center" style="padding: 10px 40px 30px; font-family: 'roboto', 'Montserrat', sans-serif; font-size: 11px; line-height: 17px; color:#36424B; font-weight: 300;" class="disc-padding"> Use code <strong>SPARKLE</strong> to get an extra 5% off select apparel and accessory brands (maximum savings $10). To redeem, sign in and apply code in the promo box at checkout. Cannot be combined with any additional offers. Limit one-time use within date of promotion. One redemption per household. Not valid on Raise Pay orders. Offer expires 12/10/18 11:59 PM CST. This offer is subject to <a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly93d3cucmFpc2UuY29tL3JhaXNlLWNhc2gtdGVybXM_dXRtX3NvdXJjZT1FbmdhZ2VtZW50JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPTIwMTgxMjE1X05ld3NsZXR0ZXJfQXVkaWVuY2UmbWVzc2FnZV9pZD01YzE1NTA5MTA3MWVmZjI1ZDI3NDViMWM/5af1e9db7e553f660e452ab1B91ddb45e" target="_blank" style="color: #788A91; text-decoration: underline;">Raise Cash Terms</a>. </td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tr valign="top">
+          <td align="center" style="padding: 0 0 30px;"><table width="310" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="center" bgcolor="#e1e2e4" style="vertical-align: top; padding: 0; line-height: 2px;"><img height="2" src="https://media.sailthru.com/5pd/1k2/1/m/5a66613926aa6.gif" style="display: block;" /></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+      
+      
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+          <td align="center" style="font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 11px; color:#788A91;"><strong>EMAIL PREFERENCES</strong></td>
+        </tr>
+        <tr>
+          <td align="center" style="vertical-align: top; padding: 10px 40px 30px; font-family: 'roboto', 'Montserrat', sans-serif; font-size: 11px; line-height: 17px; color:#36424B; font-weight: 300;" class="disc-padding"> We sent you this email at <a href="mailto:esther.shin@raise.com" style="color: #36424B; text-decoration: none;">esther.shin@raise.com</a> because you're one savvy shopper. But, you can easily <a href="http://link.raise.com/oc/5af1e9db7e553f660e452ab15c155091071eff25d2745b1c/39cecfb0" style="color:#788A91; text-decoration: underline; ">change&nbsp;your&nbsp;email&nbsp;preferences</a> in our subscription center. </td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+          <td align="center" style="vertical-align: top; padding: 0 0 30px;"><table width="85%" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr>
+                <td align="center" bgcolor="#e1e2e4" style="vertical-align: top; padding: 0; line-height: 2px;"><img height="2" src="https://media.sailthru.com/5pd/1k2/1/m/5a66613926aa6.gif" style="display: block;" /></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+          <td align="center" style="padding: 0 40px 30px; font-family: 'roboto', 'Montserrat', sans-serif; font-size: 11px; line-height: 17px; color:#36424B; font-weight: 300;" class="disc-padding"> All Content &copy; 2018 Raise Marketplace Inc. Raise and the Raise logo are registered trademarks belonging to Raise Marketplace, Inc. All trademarks not owned by Raise that appear in this email are the property of their respective owners. Raise is not the issuer of any gift cards or other closed-loop products available on Raise and is not related to any merchant whose trademarks and gift cards appear on Raise for sale. <a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly93d3cucmFpc2UuY29tL3Rlcm1zP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1Be9b169df" target="_blank" style="color:#788A91; text-decoration: underline;"> Terms&nbsp;of&nbsp;Use</a><br>
+            <br>
+            <a href="http://link.raise.com/click/5c155091071eff25d2745b1c/aHR0cHM6Ly93d3cucmFpc2UuY29tP3V0bV9zb3VyY2U9RW5nYWdlbWVudCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj0yMDE4MTIxNV9OZXdzbGV0dGVyX0F1ZGllbmNlJm1lc3NhZ2VfaWQ9NWMxNTUwOTEwNzFlZmYyNWQyNzQ1YjFj/5af1e9db7e553f660e452ab1B80e2ebf1" style="color:#36424B; text-decoration:none;" target="_blank">Raise.com&nbsp;&nbsp;|&nbsp;&nbsp;17 E. Monroe St. #338 Chicago,&nbsp;IL&nbsp;60603</a><br>
+            <br>
+            <a style="color:#788A91;" href="http://link.raise.com/view/5af1e9db7e553f660e452ab15c155091071eff25d2745b1c/eee80ad8">View Online</a></td>
+        </tr>
+      </table></td>
+  </tr>
+  <!--Footer Ends-->
+</table></td>
+      </tr>
+      <!-- FOOTER : END -->
+    </table>
+    <!-- Email Body : END --> 
+    
+    <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+            <![endif]--> 
+  </div>
+</center>
+</body>
+</html>
