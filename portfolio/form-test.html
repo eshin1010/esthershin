@@ -37,15 +37,88 @@
       color: red;
       font-style: italic;
     }
+form {
+  max-width: 200px;
+}
+
+p * {
+  display: block;
+  font: 1em sans-serif;
+}
+
+input[type=email]{
+  -webkit-appearance: none;
+
+  width: 100%;
+  border: 1px solid #333;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 90%;
+
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* This is our style for the invalid fields */
+input:invalid{
+  border-color: #900;
+  background-color: #FDD;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+/* This is the style of our error messages */
+.error {
+  width  : 100%;
+  padding: 0;
+ 
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+ 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
+}
 </style>
 <script>
-function validateForm() {
-  var x = document.forms["myForm"]["fname"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
+// There are many ways to pick a DOM node; here we get the form itself and the email
+// input box, as well as the span element into which we will place the error message.
+
+var form  = document.getElementsByTagName('form')[0];
+var email = document.getElementById('mail');
+var error = document.querySelector('.error');
+
+email.addEventListener("input", function (event) {
+  // Each time the user types something, we check if the
+  // email field is valid.
+  if (email.validity.valid) {
+    // In case there is an error message visible, if the field
+    // is valid, we remove the error message.
+    error.innerHTML = ""; // Reset the content of the message
+    error.className = "error"; // Reset the visual state of the message
   }
-}
+}, false);
+form.addEventListener("submit", function (event) {
+  // Each time the user tries to send the data, we check
+  // if the email field is valid.
+  if (!email.validity.valid) {
+    
+    // If the field is not valid, we display a custom
+    // error message.
+    error.innerHTML = "I expect an e-mail, darling!";
+    error.className = "error active";
+    // And we prevent the form from being sent by canceling the event
+    event.preventDefault();
+  }
+}, false);
 </script>
 </head>
 
@@ -72,24 +145,18 @@ function validateForm() {
   <div class="portfolio">
     <div class="row reverse">
       <div class="col l7 m7 s12 padding-4">
-        <div class="image-container"> <form class="form contents" method="post" data-id="element-1" action-xhr="https://d.fastcdn.co/submissions">
-                  <label class="form-label-title form-label-outside form-label" for="field-a19abb9a0ba495a2dc78eb17b3807e21-2">Email</label>
-<input id="field-a19abb9a0ba495a2dc78eb17b3807e21-2" class="form-input form-input-text required  " type="email" name="Email" value="" data-label-inside="Email" placeholder="" required>
-<br>
-        <label class="form-label-title form-label-outside form-label" for="field-a19abb9a0ba495a2dc78eb17b3807e21-0">First Name</label>
-<input id="field-a19abb9a0ba495a2dc78eb17b3807e21-0" class="form-input form-input-text required  " type="text" name="First Name" value="" placeholder="" data-label-inside="First Name" required>
-<br>
-        <label class="form-label-title form-label-outside form-label" for="field-a19abb9a0ba495a2dc78eb17b3807e21-1">Last Name</label>
-<input id="field-a19abb9a0ba495a2dc78eb17b3807e21-1" class="form-input form-input-text required  " type="text" name="Last Name" value="" placeholder="" data-label-inside="Last Name" required>
-<br>
-
-    <div class="item-absolute form-btn-geometry">
-      <button class="btn form-btn item-block  ">
-        Submit
-      </button>
-    </div>
-
-  </form></div>
+        <div class="image-container">
+<form novalidate>
+  <p>
+    <label for="mail">
+      <span>Please enter an email address:</span>
+      <input type="email" id="mail" name="mail">
+      <span class="error" aria-live="polite"></span>
+    </label>
+  </p>
+  <button>Submit</button>
+</form>
+</div>
       </div>
       <div class="col l5 m5 s12 padding-16">
         <h4>Form</h4>
