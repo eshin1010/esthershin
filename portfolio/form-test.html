@@ -149,10 +149,10 @@ var hasError = function (field) {
     if (validity.typeMismatch) {
 
         // Email
-        if (field.type === 'email') return 'Please enter an email address.';
+        if (field.type === 'email') return '<i class="fas fa-exclamation-circle"></i> Please enter an email address.';
 
         // URL
-        if (field.type === 'url') return 'Please enter a URL.';
+        if (field.type === 'url') return '<i class="fas fa-exclamation-circle"></i> Please enter a URL.';
 
     }
 
