@@ -37,6 +37,9 @@ form {
   width: 300px;
   margin: 0 auto;
 }
+.form-field {
+  padding-bottom: 20px;
+}
 label {
   display: block;
   font-weight: bold;
@@ -61,7 +64,7 @@ input,
 select {
   display: inline-block;
   font-size: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 5px;
   padding: 0.25em 0.5em;
   width: 100%;
 }
@@ -360,15 +363,15 @@ document.addEventListener('submit', function (event) {
   <div class="portfolio">
     <div class="row">
 <form class="validate">
-  <div>
+  <div class="form-field">
     <label for="firstname">First Name</label>
     <input type="text" id="firstname" required>
   </div>
-  <div>
+  <div class="form-field">
     <label for="lastname">Last Name</label>
     <input type="text" id="lastname" required>
   </div>
-  <div>
+  <div class="form-field">
     <label for="email">Email</label>
     <input type="email" id="email" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
   </div>
